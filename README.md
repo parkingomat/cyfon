@@ -10,4 +10,4 @@
 
 VIDEO EXAMPLE
 
-[![CYFON SUBDOMAIN DATA SCRAPE](https://imgur.com/a/pbyZrBN)](https://youtu.be/NNH6m625sb8 "CYFON SUBDOMAIN DATA SCRAPE")
+[![CYFON SUBDOMAIN DATA SCRAPE](https://postimg.cc/jCR2DSDx)](https://youtu.be/NNH6m625sb8 "CYFON SUBDOMAIN DATA SCRAPE")
