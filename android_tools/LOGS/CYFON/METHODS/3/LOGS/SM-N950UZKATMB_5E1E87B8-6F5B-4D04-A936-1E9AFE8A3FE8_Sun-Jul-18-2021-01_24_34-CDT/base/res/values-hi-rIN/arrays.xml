@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="actions_labels">
+        <item>चित्र लें</item>
+        <item>वीडियो पर कब्जा करे</item>
+        <item>स्क्रीनशॉट ले लो</item>
+        <item>स्थान भेजें</item>
+        <item>सिम जानकारी भेजें</item>
+        <item>लॉक</item>
+        <item>अनलॉक</item>
+        <item>वाईफ़ाई</item>
+        <item>मोबाइल डेटा</item>
+        <item>घूम सक्षम करें</item>
+        <item>डाटा मिटा</item>
+        <item>\"आपातकालीन मोड\"</item>
+        <item>कार्य Tasker से चलाएँ</item>
+        <item>हवाई जहाज मोड अक्षम करें</item>
+        <item>एप्लीकेशन शुरू करें</item>
+        <item>शेल कमांड निष्पादित</item>
+        <item>वाई-फाई हॉटस्पॉट</item>
+        <item>स्क्रीन रेकॉर्डिंग को कॅप्चर करे</item>
+        <item>आपने सन्देश के साथ अलार्म शुरू करे</item>
+        <item>संदेश प्रदर्शित करें</item>
+        <item>फ़ोन को कॉल करे </item>
+        <item>एसएमएस भेजें</item>
+        <item>ब्लूटूथ</item>
+        <item>अप्प दराज</item>
+        <item>ब्लॉक शक्ति मेनू</item>
+        <item>यूएसबी डिबगिंग को रोकने</item>
+        <item>ब्लॉक स्थिति पट्टी</item>
+        <item>विलंब</item>
+        <item>नकली बंद</item>
+    </string-array>
+    <string-array name="actions_values">
+        <item>TAKEPICTURE</item>
+        <item>CAPTUREVIDEO</item>
+        <item>SCREENSHOT</item>
+        <item>SENDPOSITION</item>
+        <item>SENDSIMINFO</item>
+        <item>LOCK</item>
+        <item>UNLOCK</item>
+        <item>ENABLEWIFI</item>
+        <item>ENABLEDATA</item>
+        <item>ENABLEROAMING</item>
+        <item>WIPE</item>
+        <item>STARTEMERGENCY</item>
+        <item>TASKER</item>
+        <item>DISABLEAIRPLANEMODE</item>
+        <item>STARTAPP</item>
+        <item>SHELLCOMMAND</item>
+        <item>ENABLEHOTSPOT</item>
+        <item>SCREENRECORD</item>
+        <item>ALARM</item>
+        <item>MESSAGE</item>
+        <item>CALL</item>
+        <item>SMS</item>
+        <item>BLUETOOTH</item>
+        <item>HIDEUNHIDE</item>
+        <item>BLOCKPOWERMENU</item>
+        <item>PREVENTUSBDEBUGGING</item>
+        <item>BLOCKSTATUSBAR</item>
+        <item>DELAY</item>
+        <item>FAKESHUTDOWN</item>
+    </string-array>
+    <string-array name="conditions_labels">
+        <item>बैटरी स्तर</item>
+        <item>राज्य चार्ज</item>
+        <item>वाईफ़ाई नेटवर्क</item>
+        <item>स्क्रीन राज्य</item>
+        <item>समय:</item>
+        <item>सप्ताह का दिन</item>
+        <item>स्थान</item>
+        <item>ताला स्क्रीन</item>
+        <item>\"आपातकालीन मोड\"</item>
+        <item>ब्लूटूथ डिवाइस</item>
+    </string-array>
+    <string-array name="conditions_values">
+        <item>BATTERYLEVEL</item>
+        <item>CHARGING</item>
+        <item>WIFINETWORK</item>
+        <item>SCREEN</item>
+        <item>TIME</item>
+        <item>DATE</item>
+        <item>LOCATION</item>
+        <item>LOCKSCREEN</item>
+        <item>EMERGENCYMODE</item>
+        <item>BLUETOOTH</item>
+    </string-array>
+    <string-array name="entries_list_preference">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+    </string-array>
+    <string-array name="entryvalues_list_preference">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+    </string-array>
+    <string-array name="events_labels">
+        <item>चार्जर</item>
+        <item>गलत कोड से अनलॉक</item>
+        <item>डिवाइस पर बंद</item>
+        <item>डिवाइस बंद कर</item>
+        <item>अनधिकृत सिम कार्ड</item>
+        <item>Cerberus डिवाइस व्यवस्थापक से हटाया</item>
+        <item>कम बैटरी</item>
+        <item>ब्लूटूथ डिवाइस</item>
+        <item>वाईफ़ाई नेटवर्क</item>
+        <item>टाइमर</item>
+        <item>Geofence</item>
+        <item>NFC</item>
+        <item>हवाई जहाज मोड</item>
+        <item>चलती डिवाइस</item>
+        <item>Shutdown attempt while device locked</item>
+    </string-array>
+    <string-array name="events_values">
+        <item>CHARGER</item>
+        <item>WRONGUNLOCK</item>
+        <item>BOOT</item>
+        <item>SHUTDOWN</item>
+        <item>SIMCARD</item>
+        <item>ADMINDISABLED</item>
+        <item>BATTERYLOW</item>
+        <item>BLUETOOTH</item>
+        <item>WIFISSID</item>
+        <item>TIMER</item>
+        <item>GEOFENCE</item>
+        <item>NFC</item>
+        <item>AIRPLANEMODE</item>
+        <item>ACTIVITY</item>
+        <item>SHUTDOWNATTEMPT</item>
+    </string-array>
+    <string-array name="loss_prevention_sensitivity_label">
+        <item>कम</item>
+        <item>सामान्य</item>
+        <item>उच्च</item>
+    </string-array>
+    <string-array name="loss_prevention_sensitivity_value">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+    </string-array>
+    <string-array name="screencolor_entryvalues">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+    </string-array>
+    <string-array name="screencolor_types">
+        <item>काला</item>
+        <item>सफेद</item>
+        <item>पारदर्शी</item>
+    </string-array>
+</resources>

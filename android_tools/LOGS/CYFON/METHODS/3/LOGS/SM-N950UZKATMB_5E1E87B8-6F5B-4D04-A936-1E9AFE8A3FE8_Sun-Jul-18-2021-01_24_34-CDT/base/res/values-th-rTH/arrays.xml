@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="actions_labels">
+        <item>ถ่ายภาพ</item>
+        <item>จับภาพวีดีโอ</item>
+        <item>จับภาพหน้าจอ</item>
+        <item>ส่งตำแหน่ง</item>
+        <item>ส่งข้อมูล SIM</item>
+        <item>ล็อค</item>
+        <item>ปลดล็อค</item>
+        <item>Wi-Fi</item>
+        <item>ข้อมูลมือถือ</item>
+        <item>เปิดการใช้งานโรมมิ่ง</item>
+        <item>ลบข้อมูล</item>
+        <item>\"โหมดฉุกเฉิน\"</item>
+        <item>เรียกใช้งาน Tasker</item>
+        <item>ปิดใช้งานโหมดเครื่องบิน</item>
+        <item>เริ่มโปรแกรม</item>
+        <item>ดำเนินการคำสั่งเชลล์</item>
+        <item>ฮอตสปอต Wi-Fi</item>
+        <item>บันทึกการจับภาพหน้าจอ</item>
+        <item>เตือนด้วยข้อความ</item>
+        <item>แสดงข้อความ</item>
+        <item>โทรศัพท์ไปยังหมายเลข</item>
+        <item>ส่งข้อความ</item>
+        <item>บลู​ทู​ธ</item>
+        <item>App drawer</item>
+        <item>ระงับเมนูการปิดเครื่อง</item>
+        <item>ป้องกัน USB ดีบัก</item>
+        <item>บล็อกแถบสถานะ</item>
+        <item>ล่าช้า</item>
+        <item>หลอกว่าเปิดเครื่อง</item>
+    </string-array>
+    <string-array name="actions_values">
+        <item>TAKEPICTURE</item>
+        <item>CAPTUREVIDEO</item>
+        <item>SCREENSHOT</item>
+        <item>SENDPOSITION</item>
+        <item>SENDSIMINFO</item>
+        <item>LOCK</item>
+        <item>UNLOCK</item>
+        <item>ENABLEWIFI</item>
+        <item>ENABLEDATA</item>
+        <item>ENABLEROAMING</item>
+        <item>WIPE</item>
+        <item>STARTEMERGENCY</item>
+        <item>TASKER</item>
+        <item>DISABLEAIRPLANEMODE</item>
+        <item>STARTAPP</item>
+        <item>SHELLCOMMAND</item>
+        <item>ENABLEHOTSPOT</item>
+        <item>SCREENRECORD</item>
+        <item>ALARM</item>
+        <item>MESSAGE</item>
+        <item>CALL</item>
+        <item>SMS</item>
+        <item>BLUETOOTH</item>
+        <item>HIDEUNHIDE</item>
+        <item>BLOCKPOWERMENU</item>
+        <item>PREVENTUSBDEBUGGING</item>
+        <item>BLOCKSTATUSBAR</item>
+        <item>DELAY</item>
+        <item>FAKESHUTDOWN</item>
+    </string-array>
+    <string-array name="conditions_labels">
+        <item>ระดับแบตเตอรี่</item>
+        <item>สถานะการชาร์จ</item>
+        <item>เครือข่าย WiFi</item>
+        <item>สถานะหน้าจอ</item>
+        <item>เวลา</item>
+        <item>วันของสัปดาห์</item>
+        <item>ตำแหน่ง</item>
+        <item>ล็อคสกรีน</item>
+        <item>\"โหมดฉุกเฉิน\"</item>
+        <item>อุปกรณ์บลูทูธ</item>
+    </string-array>
+    <string-array name="conditions_values">
+        <item>BATTERYLEVEL</item>
+        <item>CHARGING</item>
+        <item>WIFINETWORK</item>
+        <item>SCREEN</item>
+        <item>TIME</item>
+        <item>DATE</item>
+        <item>LOCATION</item>
+        <item>LOCKSCREEN</item>
+        <item>EMERGENCYMODE</item>
+        <item>BLUETOOTH</item>
+    </string-array>
+    <string-array name="entries_list_preference">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+    </string-array>
+    <string-array name="entryvalues_list_preference">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+    </string-array>
+    <string-array name="events_labels">
+        <item>ชาร์จ</item>
+        <item>รหัสปลดล็อคผิด</item>
+        <item>อุปกรณ์เปิดอยู่</item>
+        <item>อุปกรณ์ปิด</item>
+        <item>ซิมการ์ดยังไม่ได้รับการยืนยัน</item>
+        <item>Cerberus ถูกลบจากผู้ดูแลอุปกรณ์</item>
+        <item>แบตเตอรี่ต่ำ</item>
+        <item>อุปกรณ์บลูทูธ</item>
+        <item>เครือข่าย WiFi</item>
+        <item>จับเวลา</item>
+        <item>Geofence</item>
+        <item>NFC</item>
+        <item>โหมด​การ​บิน</item>
+        <item>การเคลื่อนไหวของอุปกรณ์</item>
+        <item>พยายามปิดในขณะที่อุปกรณ์ล็อก</item>
+    </string-array>
+    <string-array name="events_values">
+        <item>CHARGER</item>
+        <item>WRONGUNLOCK</item>
+        <item>BOOT</item>
+        <item>SHUTDOWN</item>
+        <item>SIMCARD</item>
+        <item>ADMINDISABLED</item>
+        <item>BATTERYLOW</item>
+        <item>BLUETOOTH</item>
+        <item>WIFISSID</item>
+        <item>TIMER</item>
+        <item>GEOFENCE</item>
+        <item>NFC</item>
+        <item>AIRPLANEMODE</item>
+        <item>ACTIVITY</item>
+        <item>SHUTDOWNATTEMPT</item>
+    </string-array>
+    <string-array name="loss_prevention_sensitivity_label">
+        <item>ต่ำ</item>
+        <item>ปกติ</item>
+        <item>สูง</item>
+    </string-array>
+    <string-array name="loss_prevention_sensitivity_value">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+    </string-array>
+    <string-array name="screencolor_entryvalues">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+    </string-array>
+    <string-array name="screencolor_types">
+        <item>ดำ</item>
+        <item>ขาว</item>
+        <item>โปร่งใส</item>
+    </string-array>
+</resources>

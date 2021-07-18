@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="actions_labels">
+        <item>Pořídit snímek</item>
+        <item>Pořídit video</item>
+        <item>Pořídit screenshot</item>
+        <item>Odeslat polohu</item>
+        <item>Odeslat informace o SIM</item>
+        <item>Zamknout</item>
+        <item>Odemknout</item>
+        <item>WiFi</item>
+        <item>Mobilní data</item>
+        <item>Zapnout roaming</item>
+        <item>Vymazat data</item>
+        <item>\"Nouzový režim\"</item>
+        <item>Spustit úkol z Taskeru</item>
+        <item>Vypnout režim V letadle</item>
+        <item>Spustit aplikaci</item>
+        <item>Vykonat příkaz shellu</item>
+        <item>Wi-Fi hotspot</item>
+        <item>Nahrávání obrazovky</item>
+        <item>Spustit alarm se zprávou</item>
+        <item>Zobrazit zprávu</item>
+        <item>Volat telefonní číslo</item>
+        <item>Odeslat SMS</item>
+        <item>Bluetooth</item>
+        <item>Seznam aplikací</item>
+        <item>Blokovat tlačítko Vypnout</item>
+        <item>Zabránit USB ladění</item>
+        <item>Blokovat stavový pruh</item>
+        <item>Zpoždění</item>
+        <item>Falešné vypnutí</item>
+    </string-array>
+    <string-array name="actions_values">
+        <item>TAKEPICTURE</item>
+        <item>CAPTUREVIDEO</item>
+        <item>SCREENSHOT</item>
+        <item>SENDPOSITION</item>
+        <item>SENDSIMINFO</item>
+        <item>LOCK</item>
+        <item>UNLOCK</item>
+        <item>ENABLEWIFI</item>
+        <item>ENABLEDATA</item>
+        <item>ENABLEROAMING</item>
+        <item>WIPE</item>
+        <item>STARTEMERGENCY</item>
+        <item>TASKER</item>
+        <item>DISABLEAIRPLANEMODE</item>
+        <item>STARTAPP</item>
+        <item>SHELLCOMMAND</item>
+        <item>ENABLEHOTSPOT</item>
+        <item>SCREENRECORD</item>
+        <item>ALARM</item>
+        <item>MESSAGE</item>
+        <item>CALL</item>
+        <item>SMS</item>
+        <item>BLUETOOTH</item>
+        <item>HIDEUNHIDE</item>
+        <item>BLOCKPOWERMENU</item>
+        <item>PREVENTUSBDEBUGGING</item>
+        <item>BLOCKSTATUSBAR</item>
+        <item>DELAY</item>
+        <item>FAKESHUTDOWN</item>
+    </string-array>
+    <string-array name="conditions_labels">
+        <item>Úroveň baterie</item>
+        <item>Stav nabíjení</item>
+        <item>WiFi připojení</item>
+        <item>Stav displeje</item>
+        <item>Čas</item>
+        <item>Den v týdnu</item>
+        <item>Poloha</item>
+        <item>Zámek displeje</item>
+        <item>\"Nouzový režim\"</item>
+        <item>Zařízení Bluetooth</item>
+    </string-array>
+    <string-array name="conditions_values">
+        <item>BATTERYLEVEL</item>
+        <item>CHARGING</item>
+        <item>WIFINETWORK</item>
+        <item>SCREEN</item>
+        <item>TIME</item>
+        <item>DATE</item>
+        <item>LOCATION</item>
+        <item>LOCKSCREEN</item>
+        <item>EMERGENCYMODE</item>
+        <item>BLUETOOTH</item>
+    </string-array>
+    <string-array name="entries_list_preference">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+    </string-array>
+    <string-array name="entryvalues_list_preference">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+    </string-array>
+    <string-array name="events_labels">
+        <item>Nabíječka</item>
+        <item>Špatný kód pro odemčení</item>
+        <item>Zařízení zapnuto</item>
+        <item>Zařízení vypnuto</item>
+        <item>Neautorizovaná SIM karta</item>
+        <item>Cerberus odebrán ze Správce zařízení</item>
+        <item>Slabá baterie</item>
+        <item>Zařízení Bluetooth</item>
+        <item>WiFi připojení</item>
+        <item>Časovač</item>
+        <item>Sledovaná oblast</item>
+        <item>NFC</item>
+        <item>Režim V letadle</item>
+        <item>Pohyb zařízení</item>
+        <item>Vypnutí zařízení, když je přístroj zamknutý</item>
+    </string-array>
+    <string-array name="events_values">
+        <item>CHARGER</item>
+        <item>WRONGUNLOCK</item>
+        <item>BOOT</item>
+        <item>SHUTDOWN</item>
+        <item>SIMCARD</item>
+        <item>ADMINDISABLED</item>
+        <item>BATTERYLOW</item>
+        <item>BLUETOOTH</item>
+        <item>WIFISSID</item>
+        <item>TIMER</item>
+        <item>GEOFENCE</item>
+        <item>NFC</item>
+        <item>AIRPLANEMODE</item>
+        <item>ACTIVITY</item>
+        <item>SHUTDOWNATTEMPT</item>
+    </string-array>
+    <string-array name="loss_prevention_sensitivity_label">
+        <item>nízké</item>
+        <item>normální</item>
+        <item>vysoké</item>
+    </string-array>
+    <string-array name="loss_prevention_sensitivity_value">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+    </string-array>
+    <string-array name="screencolor_entryvalues">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+    </string-array>
+    <string-array name="screencolor_types">
+        <item>Černá</item>
+        <item>Bílá</item>
+        <item>Průhledná</item>
+    </string-array>
+</resources>

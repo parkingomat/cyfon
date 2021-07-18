@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="actions_labels">
+        <item>Neem een foto</item>
+        <item>Video opgenomen</item>
+        <item>Maak schermafdruk</item>
+        <item>Stuur locatie</item>
+        <item>Stuur SIM-info</item>
+        <item>Vergrendelen</item>
+        <item>Ontgrendelen</item>
+        <item>WiFi</item>
+        <item>Mobiele gegevens</item>
+        <item>Roaming inschakelen</item>
+        <item>Gegevens wissen</item>
+        <item>\"Noodgeval modus\"</item>
+        <item>Taak uitvoeren van Tasker</item>
+        <item>Vliegtuig-modus uitschakelen</item>
+        <item>Applicatie starten</item>
+        <item>Shell-opdracht uitvoeren</item>
+        <item>Wifi-hotspot</item>
+        <item>Scherm opnemen</item>
+        <item>Start alarm met een bericht</item>
+        <item>Tonen boodschap</item>
+        <item>Toestel opbellen</item>
+        <item>Verstuur SMS</item>
+        <item>Bluetooth</item>
+        <item>App lade</item>
+        <item>Blokkeer Power menu</item>
+        <item>USB-foutopsporing voorkomen</item>
+        <item>Blokkeer status balk</item>
+        <item>vertraging</item>
+        <item>Nep afsluiten</item>
+    </string-array>
+    <string-array name="actions_values">
+        <item>TAKEPICTURE</item>
+        <item>CAPTUREVIDEO</item>
+        <item>SCREENSHOT</item>
+        <item>SENDPOSITION</item>
+        <item>SENDSIMINFO</item>
+        <item>LOCK</item>
+        <item>UNLOCK</item>
+        <item>ENABLEWIFI</item>
+        <item>ENABLEDATA</item>
+        <item>ENABLEROAMING</item>
+        <item>WIPE</item>
+        <item>STARTEMERGENCY</item>
+        <item>TASKER</item>
+        <item>DISABLEAIRPLANEMODE</item>
+        <item>STARTAPP</item>
+        <item>SHELLCOMMAND</item>
+        <item>ENABLEHOTSPOT</item>
+        <item>SCREENRECORD</item>
+        <item>ALARM</item>
+        <item>MESSAGE</item>
+        <item>CALL</item>
+        <item>SMS</item>
+        <item>BLUETOOTH</item>
+        <item>HIDEUNHIDE</item>
+        <item>BLOCKPOWERMENU</item>
+        <item>PREVENTUSBDEBUGGING</item>
+        <item>BLOCKSTATUSBAR</item>
+        <item>DELAY</item>
+        <item>FAKESHUTDOWN</item>
+    </string-array>
+    <string-array name="conditions_labels">
+        <item>Batterijniveau</item>
+        <item>Oplaadstatus</item>
+        <item>WiFi-netwerk</item>
+        <item>Schermstatus</item>
+        <item>Tijd</item>
+        <item>Dag van de week</item>
+        <item>Locatie</item>
+        <item>Vergrendel scherm</item>
+        <item>\"Noodgeval modus\"</item>
+        <item>Bluetooth-apparaat</item>
+    </string-array>
+    <string-array name="conditions_values">
+        <item>BATTERYLEVEL</item>
+        <item>CHARGING</item>
+        <item>WIFINETWORK</item>
+        <item>SCREEN</item>
+        <item>TIME</item>
+        <item>DATE</item>
+        <item>LOCATION</item>
+        <item>LOCKSCREEN</item>
+        <item>EMERGENCYMODE</item>
+        <item>BLUETOOTH</item>
+    </string-array>
+    <string-array name="entries_list_preference">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+    </string-array>
+    <string-array name="entryvalues_list_preference">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+    </string-array>
+    <string-array name="events_labels">
+        <item>Oplader</item>
+        <item>Verkeerde code</item>
+        <item>Apparaat ingeschakeld</item>
+        <item>Apparaat uitgeschakeld</item>
+        <item>Onbevoegde SIM-kaart</item>
+        <item>Cerberus verwijderd uit Apparaat-admin</item>
+        <item>Batterij bijna leeg</item>
+        <item>Bluetooth-apparaat</item>
+        <item>WiFi-netwerk</item>
+        <item>Timer</item>
+        <item>Geofence</item>
+        <item>NFC</item>
+        <item>Vliegtuigmodus</item>
+        <item>Apparaat verplaatst zich</item>
+        <item>Poging tot uitschakelen terwijl het apparaat vergrendelt is</item>
+    </string-array>
+    <string-array name="events_values">
+        <item>CHARGER</item>
+        <item>WRONGUNLOCK</item>
+        <item>BOOT</item>
+        <item>SHUTDOWN</item>
+        <item>SIMCARD</item>
+        <item>ADMINDISABLED</item>
+        <item>BATTERYLOW</item>
+        <item>BLUETOOTH</item>
+        <item>WIFISSID</item>
+        <item>TIMER</item>
+        <item>GEOFENCE</item>
+        <item>NFC</item>
+        <item>AIRPLANEMODE</item>
+        <item>ACTIVITY</item>
+        <item>SHUTDOWNATTEMPT</item>
+    </string-array>
+    <string-array name="loss_prevention_sensitivity_label">
+        <item>laag</item>
+        <item>normaal</item>
+        <item>hoog</item>
+    </string-array>
+    <string-array name="loss_prevention_sensitivity_value">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+    </string-array>
+    <string-array name="screencolor_entryvalues">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+    </string-array>
+    <string-array name="screencolor_types">
+        <item>Zwart</item>
+        <item>Wit</item>
+        <item>Transparant</item>
+    </string-array>
+</resources>

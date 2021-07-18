@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<network-security-config>
+    <domain-config>
+        <domain includeSubdomains="true">cerberusapp.com</domain>
+        <pin-set>
+            <pin digest="SHA-256">qii5Xq0XpH9Lo4c18L/5cujaL0lY+CwWcHJaWysxx6E=</pin>
+            <pin digest="SHA-256">yWulDX8E5Q0XG4+9jVDljmO2FvAVzIRhn2MppW4vyUM=</pin>
+        </pin-set>
+    </domain-config>
+</network-security-config>

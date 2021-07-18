@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="actions_labels">
+        <item>Ota kuva</item>
+        <item>Nauhoita video</item>
+        <item>Ota kuvakaappaus</item>
+        <item>Lähetä sijainti</item>
+        <item>Lähetä SIM-tiedot</item>
+        <item>Lukitse</item>
+        <item>Avaa lukitus</item>
+        <item>WiFi</item>
+        <item>Mobiilidata</item>
+        <item>Käytä verkkovierailua</item>
+        <item>Poista tiedot</item>
+        <item>\"Hätätila\"</item>
+        <item>Suorita tehtävä Taskerista</item>
+        <item>Poista lentokonetila käytöstä</item>
+        <item>Käynnistä sovellus</item>
+        <item>Suorita shell-komento</item>
+        <item>Wifi-tukiasema</item>
+        <item>Nauhoita näytön tapahtumat</item>
+        <item>Käynnistä hälytys viestillä</item>
+        <item>Näytä viesti</item>
+        <item>Soita puhelimeen</item>
+        <item>Lähetä tekstiviesti</item>
+        <item>Bluetooth</item>
+        <item>Sovellusvalikko</item>
+        <item>Estä virtavalikko</item>
+        <item>Estä USB-vianjäljitys</item>
+        <item>Estä tilarivi</item>
+        <item>Viive</item>
+        <item>Valesammutus</item>
+    </string-array>
+    <string-array name="actions_values">
+        <item>TAKEPICTURE</item>
+        <item>CAPTUREVIDEO</item>
+        <item>SCREENSHOT</item>
+        <item>SENDPOSITION</item>
+        <item>SENDSIMINFO</item>
+        <item>LOCK</item>
+        <item>UNLOCK</item>
+        <item>ENABLEWIFI</item>
+        <item>ENABLEDATA</item>
+        <item>ENABLEROAMING</item>
+        <item>WIPE</item>
+        <item>STARTEMERGENCY</item>
+        <item>TASKER</item>
+        <item>DISABLEAIRPLANEMODE</item>
+        <item>STARTAPP</item>
+        <item>SHELLCOMMAND</item>
+        <item>ENABLEHOTSPOT</item>
+        <item>SCREENRECORD</item>
+        <item>ALARM</item>
+        <item>MESSAGE</item>
+        <item>CALL</item>
+        <item>SMS</item>
+        <item>BLUETOOTH</item>
+        <item>HIDEUNHIDE</item>
+        <item>BLOCKPOWERMENU</item>
+        <item>PREVENTUSBDEBUGGING</item>
+        <item>BLOCKSTATUSBAR</item>
+        <item>DELAY</item>
+        <item>FAKESHUTDOWN</item>
+    </string-array>
+    <string-array name="conditions_labels">
+        <item>Akun taso</item>
+        <item>Latauksen tila</item>
+        <item>WiFi-verkko</item>
+        <item>Näytön tila</item>
+        <item>Aika</item>
+        <item>Viikonpäivä</item>
+        <item>Sijainti</item>
+        <item>Lukitse näyttö</item>
+        <item>\"Hätätila\"</item>
+        <item>Bluetooth-laite</item>
+    </string-array>
+    <string-array name="conditions_values">
+        <item>BATTERYLEVEL</item>
+        <item>CHARGING</item>
+        <item>WIFINETWORK</item>
+        <item>SCREEN</item>
+        <item>TIME</item>
+        <item>DATE</item>
+        <item>LOCATION</item>
+        <item>LOCKSCREEN</item>
+        <item>EMERGENCYMODE</item>
+        <item>BLUETOOTH</item>
+    </string-array>
+    <string-array name="entries_list_preference">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+    </string-array>
+    <string-array name="entryvalues_list_preference">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+    </string-array>
+    <string-array name="events_labels">
+        <item>Laturi</item>
+        <item>Väärä avauskoodi</item>
+        <item>Laite kytketty päälle</item>
+        <item>Laite kytketty pois päältä</item>
+        <item>Luvaton SIM-kortti</item>
+        <item>Cerberus poistettu laitteen järjestelmänvalvojista</item>
+        <item>Akku vähissä</item>
+        <item>Bluetooth-laite</item>
+        <item>WiFi-verkko</item>
+        <item>Ajastin</item>
+        <item>Kehäalue</item>
+        <item>NFC</item>
+        <item>Lentokonetila</item>
+        <item>Laite liikkuu</item>
+        <item>Sulkemisyritys laitteen ollessa lukittuna</item>
+    </string-array>
+    <string-array name="events_values">
+        <item>CHARGER</item>
+        <item>WRONGUNLOCK</item>
+        <item>BOOT</item>
+        <item>SHUTDOWN</item>
+        <item>SIMCARD</item>
+        <item>ADMINDISABLED</item>
+        <item>BATTERYLOW</item>
+        <item>BLUETOOTH</item>
+        <item>WIFISSID</item>
+        <item>TIMER</item>
+        <item>GEOFENCE</item>
+        <item>NFC</item>
+        <item>AIRPLANEMODE</item>
+        <item>ACTIVITY</item>
+        <item>SHUTDOWNATTEMPT</item>
+    </string-array>
+    <string-array name="loss_prevention_sensitivity_label">
+        <item>matala</item>
+        <item>normaali</item>
+        <item>korkea</item>
+    </string-array>
+    <string-array name="loss_prevention_sensitivity_value">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+    </string-array>
+    <string-array name="screencolor_entryvalues">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+    </string-array>
+    <string-array name="screencolor_types">
+        <item>Musta</item>
+        <item>Valkoinen</item>
+        <item>Läpinäkyvä</item>
+    </string-array>
+</resources>

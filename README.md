@@ -1,26 +1,62 @@
-################################################################
 
-# Cyfon Main
-Description: The program will pull down all subdomain data
-This is useful in bugbounty hunting because a lot of companies
-leave dev code on their servers, zip files, txt passwords and more
+# Cyfon Tools
+## Description: Hacking Tools - Bug Bounty, Mobile, Web, IOT, Cloud, Network, Hardware
 
-filename:cyfon.sh
+### Author: Jonathan Scott Villarreal @jonathandata1
+Distribution - Unlimited, you can use these tools anyway and anyhow you want to
 
-# WGET Master 1
-Description: This line of code will pull all absolute URLS
-From whatever site you throw at it, it is a very clean 1 liner
-You can add subdomains as well
-
-filename: wget_master_1.sh
-
-
-# Author: Jonathan Scott Villarreal
-# Program Suite: "Cyfon Tools"
-################################################################
-
-VIDEO EXAMPLES
+## VIDEO EXAMPLES
 
 [![Cyfon Main - Hacking Tools, Bug Bounty Tools](https://i.postimg.cc/Vvf56NrY/cyfon-copy.jpg)](https://youtu.be/NNH6m625sb8A)
 
 [![CWGET Master 1 - Hacking Tools, Bug Bounty Tools](https://i.postimg.cc/4x7R9R8D/Screen-Shot-2021-07-17-at-8-51-00-AM.png)](https://www.youtube.com/watch?v=YQPJH8pZvCM)
+
+## Dependencies
+ 
+####  If you are on on a MacOS you will need to install brew package manager
+ ```
+ /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+ 
+ ```
+####  For a nice selection tool for the single apk download you will need to install peco 
+ 
+ MacOS
+ ```
+ brew install peco
+ ```
+ Linux
+ ```
+ sudo apt install peco
+ 
+ ```
+#### To unpack the android apks you will need to install apk tool
+
+ MacOS
+ ```
+ brew install apktool
+ ```
+ Linux
+ ```
+ sudo apt install apktool
+ ```
+
+####  ADB (Android Debug Bridge) must be installed is installed
+ 
+ Linux & MacOS
+ ```
+ pip3 install adb
+ ```
+
+> You also need to know how enable ADB for the device you are testing on.You also need to know how enable ADB for the device you are testing on.
+
+## Tools Included So Far
+
+**Sub Domain Scrape** - The program will pull down all subdomain data This is useful in bugbounty hunting because a lot of companies leave dev code on their servers, zip files, txt passwords and more
+
+**Wget Master 1** - This line of code will pull all absolute URLS from whatever site you throw at it, it is a very clean 1 liner, you can add subdomains as well
+
+**Pull All System APKs** - This program will pull all system apks from your android device and unpack them
+
+**Pull Single APK** - This program will allow you to select and pull any apk on your device instead of downloading all. The apk will then be unpacked so you can start to search for vulnerabilities
+
+

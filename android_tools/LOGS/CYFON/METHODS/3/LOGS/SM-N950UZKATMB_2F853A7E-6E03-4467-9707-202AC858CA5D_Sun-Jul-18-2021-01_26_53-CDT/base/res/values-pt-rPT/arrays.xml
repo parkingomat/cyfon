@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="actions_labels">
+        <item>Tirar foto</item>
+        <item>Capturar vídeo</item>
+        <item>Capturar ecrã</item>
+        <item>Enviar localização</item>
+        <item>Enviar informação do cartão SIM</item>
+        <item>Bloqueio</item>
+        <item>Desbloquear</item>
+        <item>Wi-Fi</item>
+        <item>Dados Móveis</item>
+        <item>Ativar roaming</item>
+        <item>Limpar dados</item>
+        <item>\"Modo de emergência\"</item>
+        <item>Executar tarefa desde o gestor de tarefas</item>
+        <item>Desativar modo avião</item>
+        <item>Iniciar aplicação</item>
+        <item>Executar comando da shell</item>
+        <item>Ponto de acesso Wi-Fi</item>
+        <item>Capturar gravação de ecrã</item>
+        <item>Iniciar alarme com uma mensagem</item>
+        <item>Mostrar mensagem</item>
+        <item>Chamar</item>
+        <item>Enviar SMS</item>
+        <item>Bluetooth</item>
+        <item>Gaveta de aplicações</item>
+        <item>Bloquear Menu Energia</item>
+        <item>Evitar a depuração USB</item>
+        <item>Bloquear barra de estado</item>
+        <item>Atraso</item>
+        <item>Desligamento falso</item>
+    </string-array>
+    <string-array name="actions_values">
+        <item>TAKEPICTURE</item>
+        <item>CAPTUREVIDEO</item>
+        <item>SCREENSHOT</item>
+        <item>SENDPOSITION</item>
+        <item>SENDSIMINFO</item>
+        <item>LOCK</item>
+        <item>UNLOCK</item>
+        <item>ENABLEWIFI</item>
+        <item>ENABLEDATA</item>
+        <item>ENABLEROAMING</item>
+        <item>WIPE</item>
+        <item>STARTEMERGENCY</item>
+        <item>TASKER</item>
+        <item>DISABLEAIRPLANEMODE</item>
+        <item>STARTAPP</item>
+        <item>SHELLCOMMAND</item>
+        <item>ENABLEHOTSPOT</item>
+        <item>SCREENRECORD</item>
+        <item>ALARM</item>
+        <item>MESSAGE</item>
+        <item>CALL</item>
+        <item>SMS</item>
+        <item>BLUETOOTH</item>
+        <item>HIDEUNHIDE</item>
+        <item>BLOCKPOWERMENU</item>
+        <item>PREVENTUSBDEBUGGING</item>
+        <item>BLOCKSTATUSBAR</item>
+        <item>DELAY</item>
+        <item>FAKESHUTDOWN</item>
+    </string-array>
+    <string-array name="conditions_labels">
+        <item>Nível de bateria</item>
+        <item>Estado do carregamento</item>
+        <item>Rede WiFi</item>
+        <item>Estado do ecrã</item>
+        <item>Tempo</item>
+        <item>Dia da semana</item>
+        <item>Localização</item>
+        <item>Bloquear ecrã</item>
+        <item>\"Modo de emergência\"</item>
+        <item>Dispositivo Bluetooth</item>
+    </string-array>
+    <string-array name="conditions_values">
+        <item>BATTERYLEVEL</item>
+        <item>CHARGING</item>
+        <item>WIFINETWORK</item>
+        <item>SCREEN</item>
+        <item>TIME</item>
+        <item>DATE</item>
+        <item>LOCATION</item>
+        <item>LOCKSCREEN</item>
+        <item>EMERGENCYMODE</item>
+        <item>BLUETOOTH</item>
+    </string-array>
+    <string-array name="entries_list_preference">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+    </string-array>
+    <string-array name="entryvalues_list_preference">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+    </string-array>
+    <string-array name="events_labels">
+        <item>Carregador</item>
+        <item>Código de desbloqueio errado</item>
+        <item>Dispositivo ligado</item>
+        <item>Aparelho desligado</item>
+        <item>Cartão não autorizado</item>
+        <item>Cerberus removido como administrador do dispositivo</item>
+        <item>Bateria fraca</item>
+        <item>Dispositivo Bluetooth</item>
+        <item>Rede WiFi</item>
+        <item>Temporizador</item>
+        <item>Área demarcada</item>
+        <item>NFC</item>
+        <item>Modo avião</item>
+        <item>Dispositivo em movimento</item>
+        <item>Tentativa de desligamento enquanto dispositivo bloqueado</item>
+    </string-array>
+    <string-array name="events_values">
+        <item>CHARGER</item>
+        <item>WRONGUNLOCK</item>
+        <item>BOOT</item>
+        <item>SHUTDOWN</item>
+        <item>SIMCARD</item>
+        <item>ADMINDISABLED</item>
+        <item>BATTERYLOW</item>
+        <item>BLUETOOTH</item>
+        <item>WIFISSID</item>
+        <item>TIMER</item>
+        <item>GEOFENCE</item>
+        <item>NFC</item>
+        <item>AIRPLANEMODE</item>
+        <item>ACTIVITY</item>
+        <item>SHUTDOWNATTEMPT</item>
+    </string-array>
+    <string-array name="loss_prevention_sensitivity_label">
+        <item>baixa</item>
+        <item>normal</item>
+        <item>alta</item>
+    </string-array>
+    <string-array name="loss_prevention_sensitivity_value">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+    </string-array>
+    <string-array name="screencolor_entryvalues">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+    </string-array>
+    <string-array name="screencolor_types">
+        <item>Preto</item>
+        <item>Branco</item>
+        <item>Transparente</item>
+    </string-array>
+</resources>

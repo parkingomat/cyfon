@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="actions_labels">
+        <item>Направи снимка</item>
+        <item>Запиши видео</item>
+        <item>Да се направи екранна снимка</item>
+        <item>Да се изпрати местоположението</item>
+        <item>Да се изпрати инф. за SIM картата</item>
+        <item>Да се заключи</item>
+        <item>Отключи</item>
+        <item>WiFi</item>
+        <item>Мобилни данни</item>
+        <item>Да се разреши роуминг</item>
+        <item>Да се изтрият данните</item>
+        <item>„Авариен режим“</item>
+        <item>Да се изпълни задача от Tasker</item>
+        <item>Да се изключи „Самолетен режим“</item>
+        <item>Стартиране на приложение</item>
+        <item>Да се изпълни команда в конзолата</item>
+        <item>Wi-Fi точка за достъп</item>
+        <item>Направи видеозапис на екрана</item>
+        <item>Включи аларма със съобщение</item>
+        <item>Покажи съобщение</item>
+        <item>Направи обаждане</item>
+        <item>Изпрати SMS</item>
+        <item>Bluetooth</item>
+        <item>Списък с приложенията</item>
+        <item>Блокиране на менюто за захранване</item>
+        <item>Забрана на „Отстр. на грешки през USB“</item>
+        <item>Блокиране лентата на състоянието</item>
+        <item>Забавяне</item>
+        <item>Фалшиво изключване</item>
+    </string-array>
+    <string-array name="actions_values">
+        <item>TAKEPICTURE</item>
+        <item>CAPTUREVIDEO</item>
+        <item>SCREENSHOT</item>
+        <item>SENDPOSITION</item>
+        <item>SENDSIMINFO</item>
+        <item>LOCK</item>
+        <item>UNLOCK</item>
+        <item>ENABLEWIFI</item>
+        <item>ENABLEDATA</item>
+        <item>ENABLEROAMING</item>
+        <item>WIPE</item>
+        <item>STARTEMERGENCY</item>
+        <item>TASKER</item>
+        <item>DISABLEAIRPLANEMODE</item>
+        <item>STARTAPP</item>
+        <item>SHELLCOMMAND</item>
+        <item>ENABLEHOTSPOT</item>
+        <item>SCREENRECORD</item>
+        <item>ALARM</item>
+        <item>MESSAGE</item>
+        <item>CALL</item>
+        <item>SMS</item>
+        <item>BLUETOOTH</item>
+        <item>HIDEUNHIDE</item>
+        <item>BLOCKPOWERMENU</item>
+        <item>PREVENTUSBDEBUGGING</item>
+        <item>BLOCKSTATUSBAR</item>
+        <item>DELAY</item>
+        <item>FAKESHUTDOWN</item>
+    </string-array>
+    <string-array name="conditions_labels">
+        <item>Ниво на батерията</item>
+        <item>Състояние на зареждането</item>
+        <item>WiFi мрежа</item>
+        <item>Състояние на екрана</item>
+        <item>Час</item>
+        <item>Ден от седмицата</item>
+        <item>Местоположение</item>
+        <item>Заключване на екрана</item>
+        <item>„Авариен режим“</item>
+        <item>Bluetooth устройство</item>
+    </string-array>
+    <string-array name="conditions_values">
+        <item>BATTERYLEVEL</item>
+        <item>CHARGING</item>
+        <item>WIFINETWORK</item>
+        <item>SCREEN</item>
+        <item>TIME</item>
+        <item>DATE</item>
+        <item>LOCATION</item>
+        <item>LOCKSCREEN</item>
+        <item>EMERGENCYMODE</item>
+        <item>BLUETOOTH</item>
+    </string-array>
+    <string-array name="entries_list_preference">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+    </string-array>
+    <string-array name="entryvalues_list_preference">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+    </string-array>
+    <string-array name="events_labels">
+        <item>Зарядно устройство</item>
+        <item>Грешен код за отключване</item>
+        <item>Включване на устройството</item>
+        <item>Изключване на устройството</item>
+        <item>Неразрешена SIM карта</item>
+        <item>Cerberus отстранен от Администратори на у-вото</item>
+        <item>Изтощена батерия</item>
+        <item>Bluetooth устройство</item>
+        <item>WiFi мрежа</item>
+        <item>Таймер</item>
+        <item>Местоположение</item>
+        <item>NFC</item>
+        <item>Самолетен режим</item>
+        <item>Движение на устройството</item>
+        <item>Опит за изключване, докато устройството е заключено</item>
+    </string-array>
+    <string-array name="events_values">
+        <item>CHARGER</item>
+        <item>WRONGUNLOCK</item>
+        <item>BOOT</item>
+        <item>SHUTDOWN</item>
+        <item>SIMCARD</item>
+        <item>ADMINDISABLED</item>
+        <item>BATTERYLOW</item>
+        <item>BLUETOOTH</item>
+        <item>WIFISSID</item>
+        <item>TIMER</item>
+        <item>GEOFENCE</item>
+        <item>NFC</item>
+        <item>AIRPLANEMODE</item>
+        <item>ACTIVITY</item>
+        <item>SHUTDOWNATTEMPT</item>
+    </string-array>
+    <string-array name="loss_prevention_sensitivity_label">
+        <item>ниска</item>
+        <item>нормална</item>
+        <item>висока</item>
+    </string-array>
+    <string-array name="loss_prevention_sensitivity_value">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+    </string-array>
+    <string-array name="screencolor_entryvalues">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+    </string-array>
+    <string-array name="screencolor_types">
+        <item>Черен</item>
+        <item>Бял</item>
+        <item>Прозрачен</item>
+    </string-array>
+</resources>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="ga_trackingId">UA-42354621-1</string>
+    <bool name="ga_autoActivityTracking">true</bool>
+    <bool name="ga_reportUncaughtExceptions">true</bool>
+    <screenName name="com.lsdroid.cerberus.ConfigureActivity"> ConfigureActivity </screenName>
+    <screenName name="com.lsdroid.cerberus.Blacklist"> Blacklist </screenName>
+    <screenName name="com.lsdroid.cerberus.Buy"> Buy </screenName>
+    <screenName name="com.lsdroid.cerberus.ChangeAccountActivity"> ChangeAccountActivity </screenName>
+    <screenName name="com.lsdroid.cerberus.CreateAccount"> CreateAccount </screenName>
+    <screenName name="com.lsdroid.cerberus.DisableAdmin"> DisableAdmin </screenName>
+    <screenName name="com.lsdroid.cerberus.FirstConfig"> FirstConfig </screenName>
+    <screenName name="com.lsdroid.cerberus.ForgotPwd"> ForgotPwd </screenName>
+    <screenName name="com.lsdroid.cerberus.LockActivity"> LockActivity </screenName>
+    <screenName name="com.lsdroid.cerberus.LogActivity"> LogActivity </screenName>
+    <screenName name="com.lsdroid.cerberus.Login"> Login </screenName>
+    <screenName name="com.lsdroid.cerberus.StartActivity"> StartActivity </screenName>
+    <screenName name="com.lsdroid.cerberus.StartActivity2"> StartActivity2 </screenName>
+    <screenName name="com.lsdroid.cerberus.TermsActivity"> TermsActivity </screenName>
+</resources>

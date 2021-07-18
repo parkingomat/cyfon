@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="actions_labels">
+        <item>Fes una fotografia</item>
+        <item>Captura vídeo</item>
+        <item>Captura de pantalla</item>
+        <item>Enviar localització</item>
+        <item>Enviar informació de la SIM</item>
+        <item>Bloquejar</item>
+        <item>Desbloqueja</item>
+        <item>WiFi</item>
+        <item>Dades mòbils</item>
+        <item>Permetre itinerància</item>
+        <item>Esborrar dades</item>
+        <item>"\"Mode d'emergència\""</item>
+        <item>Executar tasca de Tasker</item>
+        <item>"Desactivar el mode d'avió"</item>
+        <item>"Iniciar l'aplicació"</item>
+        <item>"Executar linea d'ordres"</item>
+        <item>"Punt d'accés Wi-Fi"</item>
+        <item>Enregistrant captura de pantalla</item>
+        <item>Inicia alarma amb un missatge</item>
+        <item>Mostra missatge</item>
+        <item>Truca a un telèfon</item>
+        <item>Envia SMS</item>
+        <item>Bluetooth</item>
+        <item>"Calaix d'aplicacions"</item>
+        <item>"Bloquejar el menú d'encesa"</item>
+        <item>Impedir depuració USB</item>
+        <item>"Bloqueja la barra d'estat"</item>
+        <item>Retard</item>
+        <item>Apagat fals</item>
+    </string-array>
+    <string-array name="actions_values">
+        <item>TAKEPICTURE</item>
+        <item>CAPTUREVIDEO</item>
+        <item>SCREENSHOT</item>
+        <item>SENDPOSITION</item>
+        <item>SENDSIMINFO</item>
+        <item>LOCK</item>
+        <item>UNLOCK</item>
+        <item>ENABLEWIFI</item>
+        <item>ENABLEDATA</item>
+        <item>ENABLEROAMING</item>
+        <item>WIPE</item>
+        <item>STARTEMERGENCY</item>
+        <item>TASKER</item>
+        <item>DISABLEAIRPLANEMODE</item>
+        <item>STARTAPP</item>
+        <item>SHELLCOMMAND</item>
+        <item>ENABLEHOTSPOT</item>
+        <item>SCREENRECORD</item>
+        <item>ALARM</item>
+        <item>MESSAGE</item>
+        <item>CALL</item>
+        <item>SMS</item>
+        <item>BLUETOOTH</item>
+        <item>HIDEUNHIDE</item>
+        <item>BLOCKPOWERMENU</item>
+        <item>PREVENTUSBDEBUGGING</item>
+        <item>BLOCKSTATUSBAR</item>
+        <item>DELAY</item>
+        <item>FAKESHUTDOWN</item>
+    </string-array>
+    <string-array name="conditions_labels">
+        <item>Nivell de la bateria</item>
+        <item>Estat de càrrega</item>
+        <item>Xarxa WiFi</item>
+        <item>"Pantalla d'estat"</item>
+        <item>Time</item>
+        <item>Dia de la setmana</item>
+        <item>Ubicació</item>
+        <item>Pantalla de bloqueig</item>
+        <item>"\"Mode d'emergència\""</item>
+        <item>Dispositiu Bluetooth</item>
+    </string-array>
+    <string-array name="conditions_values">
+        <item>BATTERYLEVEL</item>
+        <item>CHARGING</item>
+        <item>WIFINETWORK</item>
+        <item>SCREEN</item>
+        <item>TIME</item>
+        <item>DATE</item>
+        <item>LOCATION</item>
+        <item>LOCKSCREEN</item>
+        <item>EMERGENCYMODE</item>
+        <item>BLUETOOTH</item>
+    </string-array>
+    <string-array name="entries_list_preference">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+    </string-array>
+    <string-array name="entryvalues_list_preference">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+    </string-array>
+    <string-array name="events_labels">
+        <item>Carregador</item>
+        <item>Codi de desbloqueig incorrecte</item>
+        <item>Dispositiu encès</item>
+        <item>Dispositiu apagat</item>
+        <item>Targeta SIM no autoritzada</item>
+        <item>Cerberus eliminat del dispositiu Admin</item>
+        <item>Bateria baixa</item>
+        <item>Dispositiu Bluetooth</item>
+        <item>Xarxa WiFi</item>
+        <item>Temporitzador</item>
+        <item>Geolocalització</item>
+        <item>NFC</item>
+        <item>Mode avió</item>
+        <item>Dispositiu en moviment</item>
+        <item>"Intent d'apagada amb el dispositiu bloquejat"</item>
+    </string-array>
+    <string-array name="events_values">
+        <item>CHARGER</item>
+        <item>WRONGUNLOCK</item>
+        <item>BOOT</item>
+        <item>SHUTDOWN</item>
+        <item>SIMCARD</item>
+        <item>ADMINDISABLED</item>
+        <item>BATTERYLOW</item>
+        <item>BLUETOOTH</item>
+        <item>WIFISSID</item>
+        <item>TIMER</item>
+        <item>GEOFENCE</item>
+        <item>NFC</item>
+        <item>AIRPLANEMODE</item>
+        <item>ACTIVITY</item>
+        <item>SHUTDOWNATTEMPT</item>
+    </string-array>
+    <string-array name="loss_prevention_sensitivity_label">
+        <item>baix</item>
+        <item>normal</item>
+        <item>alt</item>
+    </string-array>
+    <string-array name="loss_prevention_sensitivity_value">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+    </string-array>
+    <string-array name="screencolor_entryvalues">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+    </string-array>
+    <string-array name="screencolor_types">
+        <item>Negre</item>
+        <item>Blanc</item>
+        <item>Transparent</item>
+    </string-array>
+</resources>

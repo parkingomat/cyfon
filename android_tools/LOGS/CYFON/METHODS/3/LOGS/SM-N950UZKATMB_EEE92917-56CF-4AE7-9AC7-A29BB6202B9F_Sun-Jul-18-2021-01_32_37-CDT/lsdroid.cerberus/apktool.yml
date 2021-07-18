@@ -1,0 +1,71 @@
+!!brut.androlib.meta.MetaInfo
+apkFileName: base.apk
+compressionType: false
+doNotCompress:
+- resources.arsc
+- png
+- ogg
+isFrameworkApk: false
+packageInfo:
+  forcedPackageId: '127'
+  renameManifestPackage: null
+sdkInfo:
+  minSdkVersion: '21'
+  targetSdkVersion: '23'
+sharedLibrary: false
+sparseResources: false
+unknownFiles:
+  firebase-analytics.properties: '8'
+  firebase-common.properties: '8'
+  firebase-components.properties: '8'
+  firebase-core.properties: '8'
+  firebase-datatransport.properties: '8'
+  firebase-encoders-json.properties: '8'
+  firebase-iid-interop.properties: '8'
+  firebase-iid.properties: '8'
+  firebase-installations-interop.properties: '8'
+  firebase-installations.properties: '8'
+  firebase-measurement-connector.properties: '8'
+  firebase-messaging.properties: '8'
+  play-services-ads-identifier.properties: '8'
+  play-services-auth-api-phone.properties: '8'
+  play-services-auth-base.properties: '8'
+  play-services-auth.properties: '8'
+  play-services-base.properties: '8'
+  play-services-basement.properties: '8'
+  play-services-location.properties: '8'
+  play-services-maps.properties: '8'
+  play-services-measurement-api.properties: '8'
+  play-services-measurement-base.properties: '8'
+  play-services-measurement-impl.properties: '8'
+  play-services-measurement-sdk-api.properties: '8'
+  play-services-measurement-sdk.properties: '8'
+  play-services-measurement.properties: '8'
+  play-services-places-placereport.properties: '8'
+  play-services-stats.properties: '8'
+  play-services-tasks.properties: '8'
+  play-services-wearable.properties: '8'
+  transport-api.properties: '8'
+  transport-backend-cct.properties: '8'
+  transport-runtime.properties: '8'
+  com/dropbox/core/sdk-version.txt: '8'
+  com/dropbox/core/trusted-certs.raw: '8'
+  com/google/api/client/googleapis/google.jks: '8'
+  fabric/com.crashlytics.sdk.android.answers.properties: '8'
+  fabric/com.crashlytics.sdk.android.beta.properties: '8'
+  fabric/com.crashlytics.sdk.android.crashlytics-core.properties: '8'
+  fabric/com.crashlytics.sdk.android.crashlytics.properties: '8'
+  fabric/io.fabric.sdk.android.fabric.properties: '8'
+  mockito-extensions/org.mockito.plugins.MockMaker: '8'
+  mockito-extensions/org.mockito.plugins.StackTraceCleanerProvider: '8'
+  okhttp3/internal/publicsuffix/NOTICE: '8'
+  okhttp3/internal/publicsuffix/publicsuffixes.gz: '8'
+  org/mockito/internal/creation/bytebuddy/inject/MockMethodDispatcher.raw: '8'
+usesFramework:
+  ids:
+  - 1
+  tag: null
+version: 2.5.0
+versionInfo:
+  versionCode: '283670'
+  versionName: 3.6.7

@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="actions_labels">
+        <item>Tee foto</item>
+        <item>Salvesta video</item>
+        <item>Tee kuvatõmmis</item>
+        <item>Saada asukoht</item>
+        <item>Saada SIM info</item>
+        <item>Lukusta</item>
+        <item>Võta lukust lahti</item>
+        <item>WiFi</item>
+        <item>Andmeside</item>
+        <item>Luba andmerändlus</item>
+        <item>Kustuta andmed</item>
+        <item>"''Ohurežiim''"</item>
+        <item>Käivita ülesanne rakenduses Tasker</item>
+        <item>Keela lennukirežiim</item>
+        <item>Käivita rakendus</item>
+        <item>"Täida shell'i käsk"</item>
+        <item>Wi-Fi pääsupunkt</item>
+        <item>Saa ekraani salvestus</item>
+        <item>Käivita alarm koos teatega</item>
+        <item>Näita teadet</item>
+        <item>Helista telefonile</item>
+        <item>Saada SMS</item>
+        <item>Bluetooth</item>
+        <item>Rakenduse list</item>
+        <item>Blokeeri toitenupu menüü</item>
+        <item>Väldi USB silumist</item>
+        <item>Blokeeri olekuriba</item>
+        <item>Viivitus</item>
+        <item>Võlts-väljalülitus</item>
+    </string-array>
+    <string-array name="actions_values">
+        <item>TAKEPICTURE</item>
+        <item>CAPTUREVIDEO</item>
+        <item>SCREENSHOT</item>
+        <item>SENDPOSITION</item>
+        <item>SENDSIMINFO</item>
+        <item>LOCK</item>
+        <item>UNLOCK</item>
+        <item>ENABLEWIFI</item>
+        <item>ENABLEDATA</item>
+        <item>ENABLEROAMING</item>
+        <item>WIPE</item>
+        <item>STARTEMERGENCY</item>
+        <item>TASKER</item>
+        <item>DISABLEAIRPLANEMODE</item>
+        <item>STARTAPP</item>
+        <item>SHELLCOMMAND</item>
+        <item>ENABLEHOTSPOT</item>
+        <item>SCREENRECORD</item>
+        <item>ALARM</item>
+        <item>MESSAGE</item>
+        <item>CALL</item>
+        <item>SMS</item>
+        <item>BLUETOOTH</item>
+        <item>HIDEUNHIDE</item>
+        <item>BLOCKPOWERMENU</item>
+        <item>PREVENTUSBDEBUGGING</item>
+        <item>BLOCKSTATUSBAR</item>
+        <item>DELAY</item>
+        <item>FAKESHUTDOWN</item>
+    </string-array>
+    <string-array name="conditions_labels">
+        <item>Aku laetuse tase</item>
+        <item>Laadimise seisund</item>
+        <item>WiFi võrk</item>
+        <item>Ekraani seisund</item>
+        <item>Aeg</item>
+        <item>Nädalapäev</item>
+        <item>Asukoht</item>
+        <item>Ekraaniluku kuva</item>
+        <item>"''Ohurežiim''"</item>
+        <item>Bluetooth seade</item>
+    </string-array>
+    <string-array name="conditions_values">
+        <item>BATTERYLEVEL</item>
+        <item>CHARGING</item>
+        <item>WIFINETWORK</item>
+        <item>SCREEN</item>
+        <item>TIME</item>
+        <item>DATE</item>
+        <item>LOCATION</item>
+        <item>LOCKSCREEN</item>
+        <item>EMERGENCYMODE</item>
+        <item>BLUETOOTH</item>
+    </string-array>
+    <string-array name="entries_list_preference">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+    </string-array>
+    <string-array name="entryvalues_list_preference">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+    </string-array>
+    <string-array name="events_labels">
+        <item>Laadija</item>
+        <item>Vale lukukood</item>
+        <item>Seade sisse lülitatud</item>
+        <item>Seade väljalülitatud</item>
+        <item>Volitamata SIM kaart</item>
+        <item>Cerberus eemaldatud Seadme Administ</item>
+        <item>Nõrk aku</item>
+        <item>Bluetooth seade</item>
+        <item>WiFi võrk</item>
+        <item>Taimer</item>
+        <item>Geoaed</item>
+        <item>NFC</item>
+        <item>Lennuki režiim</item>
+        <item>Seade liikumisel</item>
+        <item>Lukustatud seadme väljalülitamise katse</item>
+    </string-array>
+    <string-array name="events_values">
+        <item>CHARGER</item>
+        <item>WRONGUNLOCK</item>
+        <item>BOOT</item>
+        <item>SHUTDOWN</item>
+        <item>SIMCARD</item>
+        <item>ADMINDISABLED</item>
+        <item>BATTERYLOW</item>
+        <item>BLUETOOTH</item>
+        <item>WIFISSID</item>
+        <item>TIMER</item>
+        <item>GEOFENCE</item>
+        <item>NFC</item>
+        <item>AIRPLANEMODE</item>
+        <item>ACTIVITY</item>
+        <item>SHUTDOWNATTEMPT</item>
+    </string-array>
+    <string-array name="loss_prevention_sensitivity_label">
+        <item>madal</item>
+        <item>keskmine</item>
+        <item>kõrge</item>
+    </string-array>
+    <string-array name="loss_prevention_sensitivity_value">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+    </string-array>
+    <string-array name="screencolor_entryvalues">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+    </string-array>
+    <string-array name="screencolor_types">
+        <item>Must</item>
+        <item>Valge</item>
+        <item>Läbipaistev</item>
+    </string-array>
+</resources>

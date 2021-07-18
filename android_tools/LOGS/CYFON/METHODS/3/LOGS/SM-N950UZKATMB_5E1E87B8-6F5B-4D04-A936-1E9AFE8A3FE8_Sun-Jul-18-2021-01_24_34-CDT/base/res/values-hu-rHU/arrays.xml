@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="actions_labels">
+        <item>Fotó készítése</item>
+        <item>Video rögzítése</item>
+        <item>Képernyőkép készítés</item>
+        <item>Hely küldése</item>
+        <item>SMS info küldése</item>
+        <item>Lezárás</item>
+        <item>Feloldás</item>
+        <item>WiFi</item>
+        <item>Mobilinternet</item>
+        <item>Roaming engedélyezése</item>
+        <item>Adatok megsemmisítése</item>
+        <item>Vészüzemmód</item>
+        <item>Feladat futtatása Tasker-ből</item>
+        <item>Repülőgép üzemmód kikapcsolása</item>
+        <item>Alkalmazás indítása</item>
+        <item>Shell parancs futtatása</item>
+        <item>Wi-Fi hotspot</item>
+        <item>Képernyő felvétel rögzítése</item>
+        <item>Sziréna beindítása és üzenet küldése</item>
+        <item>Üzenet megjelenítése</item>
+        <item>Telefonszám hívása</item>
+        <item>SMS küldése</item>
+        <item>Bluetooth</item>
+        <item>Alkalmazásfiók</item>
+        <item>Power menü blokkolása</item>
+        <item>USB hibakeresés funkció megakadályozása</item>
+        <item>Állapotsor blokkolása</item>
+        <item>Késleltetés</item>
+        <item>Ál-leállítás</item>
+    </string-array>
+    <string-array name="actions_values">
+        <item>TAKEPICTURE</item>
+        <item>CAPTUREVIDEO</item>
+        <item>SCREENSHOT</item>
+        <item>SENDPOSITION</item>
+        <item>SENDSIMINFO</item>
+        <item>LOCK</item>
+        <item>UNLOCK</item>
+        <item>ENABLEWIFI</item>
+        <item>ENABLEDATA</item>
+        <item>ENABLEROAMING</item>
+        <item>WIPE</item>
+        <item>STARTEMERGENCY</item>
+        <item>TASKER</item>
+        <item>DISABLEAIRPLANEMODE</item>
+        <item>STARTAPP</item>
+        <item>SHELLCOMMAND</item>
+        <item>ENABLEHOTSPOT</item>
+        <item>SCREENRECORD</item>
+        <item>ALARM</item>
+        <item>MESSAGE</item>
+        <item>CALL</item>
+        <item>SMS</item>
+        <item>BLUETOOTH</item>
+        <item>HIDEUNHIDE</item>
+        <item>BLOCKPOWERMENU</item>
+        <item>PREVENTUSBDEBUGGING</item>
+        <item>BLOCKSTATUSBAR</item>
+        <item>DELAY</item>
+        <item>FAKESHUTDOWN</item>
+    </string-array>
+    <string-array name="conditions_labels">
+        <item>Akkumlátor szint</item>
+        <item>Töltés állapota</item>
+        <item>WiFi Hálózat</item>
+        <item>Kijelző állapota</item>
+        <item>Idő</item>
+        <item>A hét napja</item>
+        <item>Hely</item>
+        <item>Zárképernyő</item>
+        <item>Vészüzemmód</item>
+        <item>Bluetooth eszköz</item>
+    </string-array>
+    <string-array name="conditions_values">
+        <item>BATTERYLEVEL</item>
+        <item>CHARGING</item>
+        <item>WIFINETWORK</item>
+        <item>SCREEN</item>
+        <item>TIME</item>
+        <item>DATE</item>
+        <item>LOCATION</item>
+        <item>LOCKSCREEN</item>
+        <item>EMERGENCYMODE</item>
+        <item>BLUETOOTH</item>
+    </string-array>
+    <string-array name="entries_list_preference">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+    </string-array>
+    <string-array name="entryvalues_list_preference">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+    </string-array>
+    <string-array name="events_labels">
+        <item>Töltő</item>
+        <item>Hibás feloldó kód</item>
+        <item>Eszköz bekapcsolva</item>
+        <item>Eszköz kikapcsolva</item>
+        <item>Azonosítatlan SIM kártya</item>
+        <item>Cerberus eltávolítva az eszközadminisztrátorok közül</item>
+        <item>Alacsony akkufeszültség</item>
+        <item>Bluetooth eszköz</item>
+        <item>WiFi Hálózat</item>
+        <item>Időzítő</item>
+        <item>Geofence</item>
+        <item>NFC</item>
+        <item>Repülőgép üzemmód</item>
+        <item>Eszköz mozgásban</item>
+        <item>Leállítási kísérlet zárolt állapotban</item>
+    </string-array>
+    <string-array name="events_values">
+        <item>CHARGER</item>
+        <item>WRONGUNLOCK</item>
+        <item>BOOT</item>
+        <item>SHUTDOWN</item>
+        <item>SIMCARD</item>
+        <item>ADMINDISABLED</item>
+        <item>BATTERYLOW</item>
+        <item>BLUETOOTH</item>
+        <item>WIFISSID</item>
+        <item>TIMER</item>
+        <item>GEOFENCE</item>
+        <item>NFC</item>
+        <item>AIRPLANEMODE</item>
+        <item>ACTIVITY</item>
+        <item>SHUTDOWNATTEMPT</item>
+    </string-array>
+    <string-array name="loss_prevention_sensitivity_label">
+        <item>alacsony</item>
+        <item>normál</item>
+        <item>magas</item>
+    </string-array>
+    <string-array name="loss_prevention_sensitivity_value">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+    </string-array>
+    <string-array name="screencolor_entryvalues">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+    </string-array>
+    <string-array name="screencolor_types">
+        <item>Fekete</item>
+        <item>Fehér</item>
+        <item>Átlátszó</item>
+    </string-array>
+</resources>

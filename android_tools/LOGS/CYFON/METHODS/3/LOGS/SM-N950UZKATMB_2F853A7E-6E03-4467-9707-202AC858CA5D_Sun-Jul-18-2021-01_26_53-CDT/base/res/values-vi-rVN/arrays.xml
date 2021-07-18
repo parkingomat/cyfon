@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="actions_labels">
+        <item>Chụp ảnh</item>
+        <item>Quay video</item>
+        <item>Lấy ảnh chụp màn hình</item>
+        <item>Gửi vị trí</item>
+        <item>Gửi thông tin SIM</item>
+        <item>Khóa</item>
+        <item>Mở khóa</item>
+        <item>WiFi</item>
+        <item>Dữ liệu di động</item>
+        <item>Bật chuyển vùng</item>
+        <item>Xoá sạch dữ liệu</item>
+        <item>\"Chế độ khẩn cấp\"</item>
+        <item>Chạy nhiệm vụ từ Tasker</item>
+        <item>Tắt chế độ máy bay</item>
+        <item>Chạy ứng dụng</item>
+        <item>Thực hiện lệnh trình bao</item>
+        <item>Phát sóng Wi-Fi</item>
+        <item>Chụp lại giao diện màn hình</item>
+        <item>Bắt đầu báo động với một tin nhắn</item>
+        <item>Hiển thị tin nhắn</item>
+        <item>Gọi điện thoại</item>
+        <item>Gửi tin nhắn SMS</item>
+        <item>Bluetooth</item>
+        <item>App drawer</item>
+        <item>Khóa menu nút nguồn</item>
+        <item>Ngăn chặn gỡ rối USB</item>
+        <item>Khóa thanh trạng thái</item>
+        <item>Chậm trễ</item>
+        <item>Fake shutdown</item>
+    </string-array>
+    <string-array name="actions_values">
+        <item>TAKEPICTURE</item>
+        <item>CAPTUREVIDEO</item>
+        <item>SCREENSHOT</item>
+        <item>SENDPOSITION</item>
+        <item>SENDSIMINFO</item>
+        <item>LOCK</item>
+        <item>UNLOCK</item>
+        <item>ENABLEWIFI</item>
+        <item>ENABLEDATA</item>
+        <item>ENABLEROAMING</item>
+        <item>WIPE</item>
+        <item>STARTEMERGENCY</item>
+        <item>TASKER</item>
+        <item>DISABLEAIRPLANEMODE</item>
+        <item>STARTAPP</item>
+        <item>SHELLCOMMAND</item>
+        <item>ENABLEHOTSPOT</item>
+        <item>SCREENRECORD</item>
+        <item>ALARM</item>
+        <item>MESSAGE</item>
+        <item>CALL</item>
+        <item>SMS</item>
+        <item>BLUETOOTH</item>
+        <item>HIDEUNHIDE</item>
+        <item>BLOCKPOWERMENU</item>
+        <item>PREVENTUSBDEBUGGING</item>
+        <item>BLOCKSTATUSBAR</item>
+        <item>DELAY</item>
+        <item>FAKESHUTDOWN</item>
+    </string-array>
+    <string-array name="conditions_labels">
+        <item>Mức pin</item>
+        <item>Trang thái sạc pin</item>
+        <item>Mạng WiFi</item>
+        <item>Giao diện màn hình</item>
+        <item>Thời gian</item>
+        <item>Ngày trong tuần</item>
+        <item>Vị trí</item>
+        <item>Khóa màn hình</item>
+        <item>\"Chế độ khẩn cấp\"</item>
+        <item>Thiết bị Bluetooth</item>
+    </string-array>
+    <string-array name="conditions_values">
+        <item>BATTERYLEVEL</item>
+        <item>CHARGING</item>
+        <item>WIFINETWORK</item>
+        <item>SCREEN</item>
+        <item>TIME</item>
+        <item>DATE</item>
+        <item>LOCATION</item>
+        <item>LOCKSCREEN</item>
+        <item>EMERGENCYMODE</item>
+        <item>BLUETOOTH</item>
+    </string-array>
+    <string-array name="entries_list_preference">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+    </string-array>
+    <string-array name="entryvalues_list_preference">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+    </string-array>
+    <string-array name="events_labels">
+        <item>Bộ sạc</item>
+        <item>Nhập sai mã mở khóa</item>
+        <item>Đã bật thiết bị chuyển</item>
+        <item>Đã tắt thiết bị chuyển</item>
+        <item>Thẻ SIM trái phép</item>
+        <item>Cerberus đã gỡ bỏ từ quản trị thiết bị</item>
+        <item>Pin yếu</item>
+        <item>Thiết bị Bluetooth</item>
+        <item>Mạng WiFi</item>
+        <item>Thời gian</item>
+        <item>Khu vực</item>
+        <item>NFC</item>
+        <item>Chế độ máy bay</item>
+        <item>Di chuyển thiết bị</item>
+        <item>Shutdown attempt while device locked</item>
+    </string-array>
+    <string-array name="events_values">
+        <item>CHARGER</item>
+        <item>WRONGUNLOCK</item>
+        <item>BOOT</item>
+        <item>SHUTDOWN</item>
+        <item>SIMCARD</item>
+        <item>ADMINDISABLED</item>
+        <item>BATTERYLOW</item>
+        <item>BLUETOOTH</item>
+        <item>WIFISSID</item>
+        <item>TIMER</item>
+        <item>GEOFENCE</item>
+        <item>NFC</item>
+        <item>AIRPLANEMODE</item>
+        <item>ACTIVITY</item>
+        <item>SHUTDOWNATTEMPT</item>
+    </string-array>
+    <string-array name="loss_prevention_sensitivity_label">
+        <item>thấp</item>
+        <item>bình thường</item>
+        <item>cao</item>
+    </string-array>
+    <string-array name="loss_prevention_sensitivity_value">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+    </string-array>
+    <string-array name="screencolor_entryvalues">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+    </string-array>
+    <string-array name="screencolor_types">
+        <item>Màu đen</item>
+        <item>Màu trắng</item>
+        <item>Trong suốt</item>
+    </string-array>
+</resources>

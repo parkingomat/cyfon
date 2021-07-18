@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="actions_labels">
+        <item>Сделать фото</item>
+        <item>Записать видео</item>
+        <item>Снимок экрана</item>
+        <item>Отправить местоположение</item>
+        <item>Отправить информацию SIM-карты</item>
+        <item>Заблокировать</item>
+        <item>Разблокировка</item>
+        <item>Wi-Fi</item>
+        <item>Моб. трафик</item>
+        <item>Включить роуминг</item>
+        <item>Стереть данные</item>
+        <item>\"Экстренный режим\"</item>
+        <item>Запуск задачи от Tasker</item>
+        <item>Отключить режим полета</item>
+        <item>Запустить приложение</item>
+        <item>Выполнение команды терминала</item>
+        <item>Точка доступа Wi-Fi</item>
+        <item>Запись экрана</item>
+        <item>Начать сообщение с тревогой</item>
+        <item>Показать сообщение</item>
+        <item>Позвонить по номеру</item>
+        <item>Отправить СМС</item>
+        <item>Bluetooth</item>
+        <item>Список приложений</item>
+        <item>Блокировка кнопки питания</item>
+        <item>Предотвратить отладку по USB</item>
+        <item>Блокировка статус бара</item>
+        <item>Задержка</item>
+        <item>Фейковое выключение</item>
+    </string-array>
+    <string-array name="actions_values">
+        <item>TAKEPICTURE</item>
+        <item>CAPTUREVIDEO</item>
+        <item>SCREENSHOT</item>
+        <item>SENDPOSITION</item>
+        <item>SENDSIMINFO</item>
+        <item>LOCK</item>
+        <item>UNLOCK</item>
+        <item>ENABLEWIFI</item>
+        <item>ENABLEDATA</item>
+        <item>ENABLEROAMING</item>
+        <item>WIPE</item>
+        <item>STARTEMERGENCY</item>
+        <item>TASKER</item>
+        <item>DISABLEAIRPLANEMODE</item>
+        <item>STARTAPP</item>
+        <item>SHELLCOMMAND</item>
+        <item>ENABLEHOTSPOT</item>
+        <item>SCREENRECORD</item>
+        <item>ALARM</item>
+        <item>MESSAGE</item>
+        <item>CALL</item>
+        <item>SMS</item>
+        <item>BLUETOOTH</item>
+        <item>HIDEUNHIDE</item>
+        <item>BLOCKPOWERMENU</item>
+        <item>PREVENTUSBDEBUGGING</item>
+        <item>BLOCKSTATUSBAR</item>
+        <item>DELAY</item>
+        <item>FAKESHUTDOWN</item>
+    </string-array>
+    <string-array name="conditions_labels">
+        <item>Уровень заряда батареи</item>
+        <item>Состояние зарядки</item>
+        <item>WiFi сеть</item>
+        <item>Состояние экрана</item>
+        <item>Время</item>
+        <item>День недели</item>
+        <item>Местоположение</item>
+        <item>Экран блокировки</item>
+        <item>\"Экстренный режим\"</item>
+        <item>Устройство Bluetooth</item>
+    </string-array>
+    <string-array name="conditions_values">
+        <item>BATTERYLEVEL</item>
+        <item>CHARGING</item>
+        <item>WIFINETWORK</item>
+        <item>SCREEN</item>
+        <item>TIME</item>
+        <item>DATE</item>
+        <item>LOCATION</item>
+        <item>LOCKSCREEN</item>
+        <item>EMERGENCYMODE</item>
+        <item>BLUETOOTH</item>
+    </string-array>
+    <string-array name="entries_list_preference">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+    </string-array>
+    <string-array name="entryvalues_list_preference">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+    </string-array>
+    <string-array name="events_labels">
+        <item>Зарядное устройство</item>
+        <item>Неверный код разблокировки</item>
+        <item>Устройство включено</item>
+        <item>Устройство выключено</item>
+        <item>Неизвестная SIM-карта</item>
+        <item>Cerberus удален из администраторов устройства</item>
+        <item>Низкий заряд батареи</item>
+        <item>Устройство Bluetooth</item>
+        <item>WiFi сеть</item>
+        <item>Таймер</item>
+        <item>Геозоны</item>
+        <item>NFC</item>
+        <item>Режим полета</item>
+        <item>Движение устройства</item>
+        <item>Выключение попытка хотя устройство заблокировано</item>
+    </string-array>
+    <string-array name="events_values">
+        <item>CHARGER</item>
+        <item>WRONGUNLOCK</item>
+        <item>BOOT</item>
+        <item>SHUTDOWN</item>
+        <item>SIMCARD</item>
+        <item>ADMINDISABLED</item>
+        <item>BATTERYLOW</item>
+        <item>BLUETOOTH</item>
+        <item>WIFISSID</item>
+        <item>TIMER</item>
+        <item>GEOFENCE</item>
+        <item>NFC</item>
+        <item>AIRPLANEMODE</item>
+        <item>ACTIVITY</item>
+        <item>SHUTDOWNATTEMPT</item>
+    </string-array>
+    <string-array name="loss_prevention_sensitivity_label">
+        <item>низкая</item>
+        <item>нормальная</item>
+        <item>высокая</item>
+    </string-array>
+    <string-array name="loss_prevention_sensitivity_value">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+    </string-array>
+    <string-array name="screencolor_entryvalues">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+    </string-array>
+    <string-array name="screencolor_types">
+        <item>Чёрный</item>
+        <item>Белый</item>
+        <item>Прозрачный</item>
+    </string-array>
+</resources>
