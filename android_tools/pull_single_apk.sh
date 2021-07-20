@@ -13,11 +13,11 @@
 # This sessions id will be generated everytime you run the program and it will be saved as a folder name
 # This is for organizational purposes
 
-__dir="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+DIR=$(dirname `which $0`)
 
 trap ctrl_c INT
 
-function ctrl_c() {
+ ctrl_c() {
     echo
     echo "Ctrl-C by user"
     # do the jobs
@@ -47,16 +47,17 @@ time_date=`date +'%a-%h-%d-%Y-%I_%M_%S-%Z'`
 # ---------------------------------------------------------------------------------------------
 device_mpn=$(adb shell getprop ril.product_code)
 
-LOG_METHOD_3=/LOGS/CYFON/METHODS/3/LOGS
-    if [[ ! -d "${LOG_METHOD_3}" ]]; then
-        mkdir -p "${__dir}"/LOGS/CYFON/METHODS/3/LOGS;
-        cd  "$_" || return;
-        mkdir "${device_mpn}"_"${sessionid}"_"${time_date}";
-        cd  "$_" || return;
-    elif [[ -d "${LOG_METHOD_3}" ]]; then
+    input_dir="${device_mpn}"_"${sessionid}"_"${time_date}"
+    LOG_METHOD_3="${DIR}"/LOGS/CYFON/METHODS/3/LOGS/
+    if [ ! -d "${LOG_METHOD_3}" ]; then
+        mkdir -p "${LOG_METHOD_3}";
+        cd  "${LOG_METHOD_3}" || return;
+        mkdir "${input_dir}" && cd "${input_dir}" || exit
+
+    elif [ -d "${LOG_METHOD_3}" ]; then
         cd "${LOG_METHOD_3}" || return
-        mkdir "${device_mpn}"_"${sessionid}"_"${time_date}";
-        cd  "$_" || return
+        mkdir "${input_dir}" && cd "${input_dir}" || exit
+
     else
         echo "Houston We HAVE A PROBLEM!!!"
     fi
@@ -81,5 +82,9 @@ LOG_METHOD_3=/LOGS/CYFON/METHODS/3/LOGS
       echo "This can take some time"
 
       for i in *.apk; do apktool d "${i}"; done
-      mv base.apk ${rename}.apk
-      mv base ${rename}
+      if [ -f base.apk ]; then
+         mv base.apk "${rename}".apk
+         mv base "${rename}"
+      else
+        exit 0
+      fi

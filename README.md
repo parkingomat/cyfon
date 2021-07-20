@@ -5,9 +5,11 @@
 ### Author: Jonathan Scott Villarreal @jonathandata1
 Distribution - Unlimited, you can use these tools anyway and anyhow you want to
 
+## CURRENT VERSION 1.1
+
 ## VIDEO EXAMPLES
 
-[![CyFon 1.0 - Hacking Tools, Bug Bounty Tools, Android, Web Recon Tools](https://i.postimg.cc/Hsdmg1nH/cyfon-1-0.png)](https://youtu.be/iWTiGBtUciA)
+[![CyFon 1.1 - Hacking Tools, Bug Bounty Tools, Android, Web Recon Tools](https://i.postimg.cc/Hsdmg1nH/cyfon-1-0.png)](https://youtu.be/iWTiGBtUciA)
 
 [![CyFon Main - Hacking Tools, Bug Bounty Tools](https://i.postimg.cc/Vvf56NrY/cyfon-copy.jpg)](https://youtu.be/NNH6m625sb8A)
 
@@ -43,10 +45,14 @@ Distribution - Unlimited, you can use these tools anyway and anyhow you want to
  ```
 
 ####  ADB (Android Debug Bridge) must be installed is installed
- 
- Linux & MacOS
+ MacOS 
  ```
- pip3 install adb
+ brew install android-platform-tools
+ ```
+ 
+ Linux 
+ ```
+ sudo apt-get install android-tools-adb
  ```
 
 > You also need to know how enable ADB for the device you are testing on.You also need to know how enable ADB for the device you are testing on.

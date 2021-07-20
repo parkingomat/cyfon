@@ -12,11 +12,11 @@
 # This sessions id will be generated everytime you run the program and it will be saved as a folder name
 # This is for organizational purposes
 
-__dir="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+DIR=$(dirname `which $0`)
 
 trap ctrl_c INT
 
-function ctrl_c() {
+ ctrl_c() {
     echo
     echo "Ctrl-C by user"
     # do the jobs
@@ -46,16 +46,17 @@ time_date=`date +'%a-%h-%d-%Y-%I_%M_%S-%Z'`
 # ---------------------------------------------------------------------------------------------
 device_mpn=$(adb shell getprop ril.product_code)
 
-LOG_METHOD_2=/LOGS/CYFON/METHODS/2/LOGS
-    if [[ ! -d "${LOG_METHOD_2}" ]]; then
-        mkdir -p "${__dir}"/LOGS/CYFON/METHODS/2/LOGS;
-        cd  "$_" || return;
-        mkdir "${device_mpn}"_"${sessionid}"_"${time_date}";
-        cd  "$_" || return;
-    elif [[ -d "${LOG_METHOD_2}" ]]; then
+    input_dir="${device_mpn}"_"${sessionid}"_"${time_date}"
+    LOG_METHOD_2="${DIR}"/LOGS/CYFON/METHODS/2/LOGS/
+    if [ ! -d "${LOG_METHOD_2}" ]; then
+        mkdir -p "${LOG_METHOD_2}";
+        cd  "${LOG_METHOD_2}" || return;
+        mkdir "${input_dir}" && cd "${input_dir}" || exit
+
+    elif [ -d "${LOG_METHOD_2}" ]; then
         cd "${LOG_METHOD_2}" || return
-        mkdir "${device_mpn}"_"${sessionid}"_"${time_date}";
-        cd  "$_" || return
+        mkdir "${input_dir}" && cd "${input_dir}" || exit
+
     else
         echo "Houston We HAVE A PROBLEM!!!"
     fi

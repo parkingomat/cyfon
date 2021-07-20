@@ -1,5 +1,4 @@
 #! /bin/bash
-
 ################################################################
 # Description: The program will pull down all subdomain data
 # This is useful in bugbounty hunting because a lot of companies
@@ -12,12 +11,12 @@
 
 # This sessions id will be generated everytime you run the program and it will be saved as a folder name
 # This is for organizational purposes
+DIR=$(dirname `which $0`)
 
-__dir="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 
 trap ctrl_c INT
 
-function ctrl_c() {
+ ctrl_c() {
     echo
     echo "Ctrl-C by user"
     # do the jobs
@@ -55,16 +54,17 @@ time_date=`date +'%a-%h-%d-%Y-%I_%M_%S-%Z'`
     IFS= read -r -p "Enter The URL or File To Pull Down: " input
     double_space
 
-LOG_METHOD_0=/LOGS/CYFON/METHODS/0/LOGS
-    if [[ ! -d "${LOG_METHOD_0}" ]]; then
-        mkdir -p "${__dir}"/LOGS/CYFON/METHODS/0/LOGS;
-        cd  "$_" || return;
-        mkdir "${input}"_"${sessionid}"_"${time_date}";
-        cd  "$_" || return
-    elif [[ -d "${LOG_METHOD_0}" ]]; then
+    input_dir="${input}"_"${sessionid}"_"${time_date}"
+    LOG_METHOD_0="${DIR}"/LOGS/CYFON/METHODS/0/LOGS/
+    if [ ! -d "${LOG_METHOD_0}" ]; then
+        mkdir -p "${LOG_METHOD_0}";
+        cd  "${LOG_METHOD_0}" || return;
+        mkdir "${input_dir}" && cd "${input_dir}" || exit
+
+    elif [ -d "${LOG_METHOD_0}" ]; then
         cd "${LOG_METHOD_0}" || return
-        mkdir "${input}"_"${sessionid}"_"${time_date}";
-        cd  "$_" || return
+        mkdir "${input_dir}" && cd "${input_dir}" || exit
+
     else
         echo "Houston We HAVE A PROBLEM!!!"
     fi
@@ -88,9 +88,9 @@ LOG_METHOD_0=/LOGS/CYFON/METHODS/0/LOGS
     # I am again saving this cleaned up list to a temp file on your localhost
 
     cat /tmp/out.html | tr '<BR>' '\n' | grep -E ".gov|.mil|.com|.us|.net|.biz|.io|.org" | sed '/href/d;/crt.sh/d;/Type:/d;/[A-Z]=/d;/ /d' | sort | uniq > /tmp/subdomains.txt
-
     # Finally I am using wget to pull all data, this is essentially scrapping the site
     # I am using --no-check-certificate because sometimes you will run into gov sites that will refuse to download
     # unless you are using the --no-check-certificate tag
+    # using the refer and user-agent tags so that we're not blocked from download content, some sites check the User-Agent
 
-    while read LINE; do wget -m --timeout=1 --tries=1 --retry-connrefused  "${LINE}"  --no-check-certificate ; done < /tmp/subdomains.txt
+    while read LINE; do wget  --refer=http://google.com --user-agent="Mozilla/5.0 Firefox/4.0.1" --execute robots=off  --recursive  --no-parent --continue --no-clobber --timeout=1 --tries=1 --retry-connrefused  "${LINE}"  --no-check-certificate ; done < /tmp/subdomains.txt

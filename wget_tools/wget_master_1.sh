@@ -14,11 +14,11 @@
 # This sessions id will be generated everytime you run the program and it will be saved as a folder name
 # This is for organizational purposes
 
-__dir="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+DIR=$(dirname `which $0`)
 
 trap ctrl_c INT
 
-function ctrl_c() {
+ ctrl_c() {
     echo
     echo "Ctrl-C by user"
     # do the jobs
@@ -57,16 +57,17 @@ time_date=`date +'%a-%h-%d-%Y-%I_%M_%S-%Z'`
     IFS= read -r -p "Enter the url to pull all Absolute URLS within the page: " input
     double_space
 
-LOG_METHOD_1=/LOGS/CYFON/METHODS/1/LOGS
-    if [[ ! -d "${LOG_METHOD_1}" ]]; then
-        mkdir -p "${__dir}"/LOGS/CYFON/METHODS/1/LOGS;
-        cd  "$_" || return;
-        mkdir "${input}"_"${sessionid}"_"${time_date}";
-        cd  "$_" || return
-    elif [[ -d "${LOG_METHOD_1}" ]]; then
+    input_dir="${input}"_"${sessionid}"_"${time_date}"
+    LOG_METHOD_1="${DIR}"/LOGS/CYFON/METHODS/1/LOGS/
+    if [ ! -d "${LOG_METHOD_1}" ]; then
+        mkdir -p "${LOG_METHOD_1}";
+        cd  "${LOG_METHOD_1}" || return;
+        mkdir "${input_dir}" && cd "${input_dir}" || exit
+
+    elif [ -d "${LOG_METHOD_1}" ]; then
         cd "${LOG_METHOD_1}" || return
-        mkdir "${input}"_"${sessionid}"_"${time_date}";
-        cd  "$_" || return
+        mkdir "${input_dir}" && cd "${input_dir}" || exit
+
     else
         echo "Houston We HAVE A PROBLEM!!!"
     fi
