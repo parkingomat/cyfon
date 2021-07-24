@@ -2,10 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ed3f9521-3e9a-4bb5-a4ce-bec8a1e8a91d" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/android_tools/pull_single_apk.sh" beforeDir="false" afterPath="$PROJECT_DIR$/android_tools/pull_single_apk.sh" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/android_tools/pull_system_apks.sh" beforeDir="false" afterPath="$PROJECT_DIR$/android_tools/pull_system_apks.sh" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web_scrape_tools/subdomain_scrape.sh" beforeDir="false" afterPath="$PROJECT_DIR$/web_scrape_tools/subdomain_scrape.sh" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wget_tools/wget_master_1.sh" beforeDir="false" afterPath="$PROJECT_DIR$/wget_tools/wget_master_1.sh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -35,7 +32,11 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -51,7 +52,8 @@
       <option name="presentableId" value="Default" />
       <updated>1626567128358</updated>
       <workItem from="1626567130249" duration="23233000" />
-      <workItem from="1626695333531" duration="4661000" />
+      <workItem from="1626695333531" duration="5895000" />
+      <workItem from="1626832286368" duration="828000" />
     </task>
     <servers />
   </component>
