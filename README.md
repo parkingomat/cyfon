@@ -5,11 +5,11 @@
 ### Author: Jonathan Scott Villarreal @jonathandata1
 Distribution - Unlimited, you can use these tools anyway and anyhow you want to
 
-## CURRENT VERSION 1.1
+## CURRENT VERSION 1.2
 
 ## VIDEO EXAMPLES
 
-[![CyFon 1.1 - Hacking Tools, Bug Bounty Tools, Android, Web Recon Tools](https://i.postimg.cc/Hsdmg1nH/cyfon-1-0.png)](https://youtu.be/iWTiGBtUciA)
+[![CyFon 1.2 - Hacking Tools, Bug Bounty Tools, Android, Web Recon Tools](https://i.postimg.cc/Hsdmg1nH/cyfon-1-0.png)](https://youtu.be/iWTiGBtUciA)
 
 [![CyFon Main - Hacking Tools, Bug Bounty Tools](https://i.postimg.cc/Vvf56NrY/cyfon-copy.jpg)](https://youtu.be/NNH6m625sb8A)
 
@@ -66,5 +66,7 @@ Distribution - Unlimited, you can use these tools anyway and anyhow you want to
 **Pull All System APKs** - This program will pull all system apks from your android device and unpack them
 
 **Pull Single APK** - This program will allow you to select and pull any apk on your device instead of downloading all. The apk will then be unpacked so you can start to search for vulnerabilities
+
+**WADL PARSE** - This program will find the base of the .wadl path, and combine it with the resource paths to form full API endpoints for recon
 
 
