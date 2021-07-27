@@ -193,6 +193,32 @@ __dir="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
         pause
     }
 
+    four="Parse .wadl files and expose API Endpoints"
+    four (){
+
+        printf "%s\n${PURPLE}--------------------------------------------------------------${NC}"
+        printf "%s\n${CYAN} RUNNING METHOD #4 - ${four} ${NC}"
+        printf "%s\n${PURPLE}--------------------------------------------------------------${NC}"
+        double_space
+        trap ctrl_c INT
+
+          function ctrl_c() {
+            echo
+            echo "Ctrl-C Ended the Application"
+            # do the jobs
+            exit
+    }
+        method_4(){
+
+        sh "${__dir}"/web_scrape_tools/wadl-parse.sh
+
+
+        }
+            method_4
+
+        pause
+    }
+
 
     ##############################################
     ##############################################
@@ -213,7 +239,8 @@ __dir="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
     ${NC}"
     printf "%s\n${PURPLE}-----------------------------------------------------------------------------------------------------------------------------------------------------${NC}"
     printf "%s\n${PURPLE}-------------------------------------- Brought To You By: Jonathan Scott Villarreal ---------------------------------------------------------${NC}"
-    printf "%s\n${PURPLE}-------------------------------------- Updated On: 7/17/2021 -------------------------------------------------------------------------------------${NC}"
+    printf "%s\n${PURPLE}-------------------------------------- Updated On: 7/26/2021 -------------------------------------------------------------------------------------${NC}"
+    printf "%s\n${PURPLE}-------------------------------------- Version 1.2 -------------------------------------------------------------------------------------${NC}"
     printf "%s\n${PURPLE}-------------------------------------- Hacking Tools - Bug Bounty, Mobile, Web, IOT, Cloud, Network Hardware -------------------------${NC}"
     printf "%s\n${PURPLE}##############################################################################################################################################################################${NC}"
 
@@ -230,20 +257,22 @@ __dir="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
     echo "1. ${one}"
     echo "2. ${two}"
     echo "3. ${three}"
-    echo "4. Exit"
+    echo "4. ${four}"
+    echo "5. Exit"
 
     }
     # Read the user input
 
     read_options(){
       local choice
-      read -p "Enter choice [ 0 - 4 ] " choice
+      read -p "Enter choice [ 0 - 5 ] " choice
       case ${choice} in
         0) zero ;;
         1) one ;;
         2) two ;;
         3) three ;;
-        4) exit 0;; #This will exit out of the application
+        4) four ;;
+        5) exit 0;; #This will exit out of the application
 		*) printf "%s\n${RED}Error...Option Not Valid, Please Choose Another${NC}" && sleep 2
 	esac
 
