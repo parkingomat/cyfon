@@ -69,4 +69,6 @@ Distribution - Unlimited, you can use these tools anyway and anyhow you want to
 
 **WADL PARSE** - This program will find the base of the .wadl path, and combine it with the resource paths to form full API endpoints for recon
 
+**PEGASUS SPYWARE DECOMPILED** - Thanks to vx-underground @vxunderground I was able to decompile the sources he gathered. Enjoy!
+
 
