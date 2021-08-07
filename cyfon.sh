@@ -219,6 +219,32 @@ __dir="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
         pause
     }
 
+    five="Dump All Android Secret Codes"
+    five(){
+
+        printf "%s\n${PURPLE}--------------------------------------------------------------${NC}"
+        printf "%s\n${CYAN} RUNNING METHOD #5 - ${four} ${NC}"
+        printf "%s\n${PURPLE}--------------------------------------------------------------${NC}"
+        double_space
+        trap ctrl_c INT
+
+          function ctrl_c() {
+            echo
+            echo "Ctrl-C Ended the Application"
+            # do the jobs
+            exit
+    }
+        method_5(){
+
+        sh "${__dir}"/android_tools/dump_android_secret_codes.sh
+
+
+        }
+            method_5
+
+        pause
+    }
+
 
     ##############################################
     ##############################################
@@ -239,8 +265,8 @@ __dir="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
     ${NC}"
     printf "%s\n${PURPLE}-----------------------------------------------------------------------------------------------------------------------------------------------------${NC}"
     printf "%s\n${PURPLE}-------------------------------------- Brought To You By: Jonathan Scott Villarreal ---------------------------------------------------------${NC}"
-    printf "%s\n${PURPLE}-------------------------------------- Updated On: 7/26/2021 -------------------------------------------------------------------------------------${NC}"
-    printf "%s\n${PURPLE}-------------------------------------- Version 1.2 -------------------------------------------------------------------------------------${NC}"
+    printf "%s\n${PURPLE}-------------------------------------- Updated On: 8/6/2021 -------------------------------------------------------------------------------------${NC}"
+    printf "%s\n${PURPLE}-------------------------------------- Version 1.3 -------------------------------------------------------------------------------------${NC}"
     printf "%s\n${PURPLE}-------------------------------------- Hacking Tools - Bug Bounty, Mobile, Web, IOT, Cloud, Network Hardware -------------------------${NC}"
     printf "%s\n${PURPLE}##############################################################################################################################################################################${NC}"
 
@@ -258,21 +284,23 @@ __dir="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
     echo "2. ${two}"
     echo "3. ${three}"
     echo "4. ${four}"
-    echo "5. Exit"
+    echo "5. ${five}"
+    echo "6. Exit"
 
     }
     # Read the user input
 
     read_options(){
       local choice
-      read -p "Enter choice [ 0 - 5 ] " choice
+      read -p "Enter choice [ 0 - 6 ] " choice
       case ${choice} in
         0) zero ;;
         1) one ;;
         2) two ;;
         3) three ;;
         4) four ;;
-        5) exit 0;; #This will exit out of the application
+        5) five ;;
+        6) exit 0;; #This will exit out of the application
 		*) printf "%s\n${RED}Error...Option Not Valid, Please Choose Another${NC}" && sleep 2
 	esac
 

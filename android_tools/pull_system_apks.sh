@@ -12,7 +12,8 @@
 # This sessions id will be generated everytime you run the program and it will be saved as a folder name
 # This is for organizational purposes
 
-DIR=$(dirname `which $0`)
+DIR="$(dirname "$(which "$0")")"
+
 
 trap ctrl_c INT
 
@@ -24,7 +25,7 @@ trap ctrl_c INT
 }
 
 sessionid=$(uuidgen)
-time_date=`date +'%a-%h-%d-%Y-%I_%M_%S-%Z'`
+time_date=$(date +'%a-%h-%d-%Y-%I_%M_%S-%Z')
 
     # FUNCTION TO ADD 1 BLANK ROW JUST BY TYPING space
         space(){
@@ -39,6 +40,7 @@ time_date=`date +'%a-%h-%d-%Y-%I_%M_%S-%Z'`
                     echo ""
 
          }
+
 
 # ---------------------------------------------------------------------------------------------
 # LOG FILE DIRECTORIES
