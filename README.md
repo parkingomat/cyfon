@@ -5,7 +5,7 @@
 ### Author: Jonathan Scott Villarreal @jonathandata1
 Distribution - Unlimited, you can use these tools anyway and anyhow you want to
 
-## CURRENT VERSION 1.2
+## CURRENT VERSION 1.3
 
 ## VIDEO EXAMPLES
 
@@ -69,6 +69,10 @@ Distribution - Unlimited, you can use these tools anyway and anyhow you want to
 
 **WADL PARSE** - This program will find the base of the .wadl path, and combine it with the resource paths to form full API endpoints for recon
 
-**PEGASUS SPYWARE DECOMPILED** - Thanks to vx-underground @vxunderground I was able to decompile the sources he gathered. Enjoy!
+**Dump All Android Secret Codes** - This will dump all android secret codes and show the system package associated to the secret code. 
+
+Using the codes depends on your device
+
+Here are the 3 ways 
 
 
