@@ -223,7 +223,7 @@ __dir="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
     five(){
 
         printf "%s\n${PURPLE}--------------------------------------------------------------${NC}"
-        printf "%s\n${CYAN} RUNNING METHOD #5 - ${four} ${NC}"
+        printf "%s\n${CYAN} RUNNING METHOD #5 - ${five} ${NC}"
         printf "%s\n${PURPLE}--------------------------------------------------------------${NC}"
         double_space
         trap ctrl_c INT
@@ -241,6 +241,32 @@ __dir="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 
         }
             method_5
+
+        pause
+    }
+
+    six="Subdomain Rake"
+    six(){
+
+        printf "%s\n${PURPLE}--------------------------------------------------------------${NC}"
+        printf "%s\n${CYAN} RUNNING METHOD #6 - ${six} ${NC}"
+        printf "%s\n${PURPLE}--------------------------------------------------------------${NC}"
+        double_space
+        trap ctrl_c INT
+
+          function ctrl_c() {
+            echo
+            echo "Ctrl-C Ended the Application"
+            # do the jobs
+            exit
+    }
+        method_6(){
+
+        sh "${__dir}"/web_scrape_tools/subdomain_rake.sh
+
+
+        }
+            method_6
 
         pause
     }
@@ -265,8 +291,8 @@ __dir="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
     ${NC}"
     printf "%s\n${PURPLE}-----------------------------------------------------------------------------------------------------------------------------------------------------${NC}"
     printf "%s\n${PURPLE}-------------------------------------- Brought To You By: Jonathan Scott Villarreal ---------------------------------------------------------${NC}"
-    printf "%s\n${PURPLE}-------------------------------------- Updated On: 8/6/2021 -------------------------------------------------------------------------------------${NC}"
-    printf "%s\n${PURPLE}-------------------------------------- Version 1.3 -------------------------------------------------------------------------------------${NC}"
+    printf "%s\n${PURPLE}-------------------------------------- Updated On: 8/17/2021 -------------------------------------------------------------------------------------${NC}"
+    printf "%s\n${PURPLE}-------------------------------------- Version 1.4 -------------------------------------------------------------------------------------${NC}"
     printf "%s\n${PURPLE}-------------------------------------- Hacking Tools - Bug Bounty, Mobile, Web, IOT, Cloud, Network Hardware -------------------------${NC}"
     printf "%s\n${PURPLE}##############################################################################################################################################################################${NC}"
 
@@ -285,14 +311,15 @@ __dir="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
     echo "3. ${three}"
     echo "4. ${four}"
     echo "5. ${five}"
-    echo "6. Exit"
+    echo "6. ${six}"
+    echo "7. Exit"
 
     }
     # Read the user input
 
     read_options(){
       local choice
-      read -p "Enter choice [ 0 - 6 ] " choice
+      read -p "Enter choice [ 0 - 7 ] " choice
       case ${choice} in
         0) zero ;;
         1) one ;;
@@ -300,7 +327,8 @@ __dir="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
         3) three ;;
         4) four ;;
         5) five ;;
-        6) exit 0;; #This will exit out of the application
+        6) six ;;
+        7) exit 0;; #This will exit out of the application
 		*) printf "%s\n${RED}Error...Option Not Valid, Please Choose Another${NC}" && sleep 2
 	esac
 
