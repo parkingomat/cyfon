@@ -5,9 +5,13 @@
 ### Author: Jonathan Scott Villarreal @jonathandata1
 Distribution - Unlimited, you can use these tools anyway and anyhow you want to
 
-## CURRENT VERSION 1.3
+## CURRENT VERSION 1.4
+## NEW: Method 6 
+> Subdomain RAKE, Pull current and historical subdomain data from a URL (you must install pup, see install instructions)
 
 ## VIDEO EXAMPLES
+
+![CyFon 1.4 - Hacking Tools, Bug Bounty Tools, Android, Web Recon Tools](https://i.postimg.cc/C1Zt47mP/Untitled-design-Max-Quality-23.jpg)
 
 [![CyFon 1.2 - Hacking Tools, Bug Bounty Tools, Android, Web Recon Tools](https://i.postimg.cc/Hsdmg1nH/cyfon-1-0.png)](https://youtu.be/iWTiGBtUciA)
 
@@ -20,7 +24,12 @@ Distribution - Unlimited, you can use these tools anyway and anyhow you want to
 ####  If you are on on a MacOS you will need to install brew package manager
  ```
  /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
- 
+```
+#### Pup
+
+ MacOS & Linux
+ ```
+ brew install pup
  ```
 ####  For a nice selection tool for the single apk download you will need to install peco 
  
