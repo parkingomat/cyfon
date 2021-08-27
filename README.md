@@ -5,9 +5,13 @@
 ### Author: Jonathan Scott Villarreal @jonathandata1
 Distribution - Unlimited, you can use these tools anyway and anyhow you want to
 
-## CURRENT VERSION 1.4
-## NEW: Method 6 
-> Subdomain RAKE, Pull current and historical subdomain data from a URL (you must install pup, see install instructions)
+## CURRENT VERSION 2.0
+## NEW: Method 7 
+> Subdomain Status Code, Get the status code for all subdomains and top level domain
+## Update: Method 6 
+> web based visual output
+
+
 
 ## VIDEO EXAMPLES
 
@@ -63,6 +67,12 @@ Distribution - Unlimited, you can use these tools anyway and anyhow you want to
  ```
  sudo apt-get install android-tools-adb
  ```
+ 
+####  CSV to Table
+```
+pip3 install csvtotable
+```
+
 
 > You also need to know how enable ADB for the device you are testing on.You also need to know how enable ADB for the device you are testing on.
 
