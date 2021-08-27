@@ -89,3 +89,5 @@ device_mpn=$(adb shell getprop ril.product_code)
       else
         exit 0
       fi
+
+      open .

@@ -120,3 +120,4 @@ time_date=$(date +'%a-%h-%d-%Y-%I_%M_%S-%Z')
     }
 
   wadl_cat | tee wadl.out
+  open .

@@ -88,10 +88,13 @@ time_date=$(date +'%a-%h-%d-%Y-%I_%M_%S-%Z')
     # I am sorting the domains that were grepped and making sure there are no duplicates with the uniq command
     # I am again saving this cleaned up list to a temp file on your localhost
 
-    cat /tmp/out.html | tr '<BR>' '\n' | grep -E ".gov|.mil|.com|.us|.net|.biz|.io|.org" | sed '/href/d;/crt.sh/d;/Type:/d;/[A-Z]=/d;/ /d' | sort | uniq > /tmp/subdomains.txt
+    cat /tmp/out.html | tr '<BR>' '\n' | grep -E ".gov|.mil|.com|.us|.net|.biz|.io|.org" | sed '/href/d;/crt.sh/d;/Type:/d;/[A-Z]=/d;/ /d' | sort | uniq > subdomains_out.txt
     # Finally I am using wget to pull all data, this is essentially scrapping the site
     # I am using --no-check-certificate because sometimes you will run into gov sites that will refuse to download
     # unless you are using the --no-check-certificate tag
     # using the refer and user-agent tags so that we're not blocked from download content, some sites check the User-Agent
+    echo "Pull subdomain data for the following subdomains"
+    cat subdomains_out.txt
 
-    while read LINE; do wget  --refer=http://google.com --user-agent="Mozilla/5.0 Firefox/4.0.1" --execute robots=off  --recursive  --no-parent --continue --no-clobber --timeout=1 --tries=1 --retry-connrefused  "${LINE}"  --no-check-certificate ; done < /tmp/subdomains.txt
+    while read LINE; do  wget  --refer=http://google.com --user-agent="Mozilla/5.0 Firefox/4.0.1" --execute robots=off  --recursive  --no-parent --continue --no-clobber --timeout=1 --tries=1 --retry-connrefused  "${LINE}"  --no-check-certificate | xargs -n1 -P 100000; done < subdomains_out.txt
+    open .

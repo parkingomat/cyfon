@@ -80,3 +80,5 @@ device_mpn=$(adb shell getprop ril.product_code)
       echo "This can take some time"
 
       for i in *.apk; do apktool d "${i}"; done
+
+      open .

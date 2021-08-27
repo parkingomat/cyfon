@@ -80,3 +80,4 @@ os_ver=$(adb shell getprop ro.build.version.release)
       }
 
       android_secret_code_dump | tee "${man}"_"${model}"_"${os_ver}"_android_secret_codes.log
+      open .

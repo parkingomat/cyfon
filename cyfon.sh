@@ -271,6 +271,31 @@ __dir="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
         pause
     }
 
+seven="Subdomain & Domain Status Code"
+    seven(){
+
+        printf "%s\n${PURPLE}--------------------------------------------------------------${NC}"
+        printf "%s\n${CYAN} RUNNING METHOD #7 - ${seven} ${NC}"
+        printf "%s\n${PURPLE}--------------------------------------------------------------${NC}"
+        double_space
+        trap ctrl_c INT
+
+          function ctrl_c() {
+            echo
+            echo "Ctrl-C Ended the Application"
+            # do the jobs
+            exit
+    }
+        method_7(){
+
+        sh "${__dir}"/web_scrape_tools/subdomain_status_codes.sh
+
+
+        }
+            method_7
+
+        pause
+    }
 
     ##############################################
     ##############################################
@@ -291,8 +316,8 @@ __dir="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
     ${NC}"
     printf "%s\n${PURPLE}-----------------------------------------------------------------------------------------------------------------------------------------------------${NC}"
     printf "%s\n${PURPLE}-------------------------------------- Brought To You By: Jonathan Scott Villarreal ---------------------------------------------------------${NC}"
-    printf "%s\n${PURPLE}-------------------------------------- Updated On: 8/17/2021 -------------------------------------------------------------------------------------${NC}"
-    printf "%s\n${PURPLE}-------------------------------------- Version 1.4 -------------------------------------------------------------------------------------${NC}"
+    printf "%s\n${PURPLE}-------------------------------------- Updated On: 8/26/2021 -------------------------------------------------------------------------------------${NC}"
+    printf "%s\n${PURPLE}-------------------------------------- Version 1.5 -------------------------------------------------------------------------------------${NC}"
     printf "%s\n${PURPLE}-------------------------------------- Hacking Tools - Bug Bounty, Mobile, Web, IOT, Cloud, Network Hardware -------------------------${NC}"
     printf "%s\n${PURPLE}##############################################################################################################################################################################${NC}"
 
@@ -312,14 +337,15 @@ __dir="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
     echo "4. ${four}"
     echo "5. ${five}"
     echo "6. ${six}"
-    echo "7. Exit"
+    echo "7. ${seven}"
+    echo "8. Exit"
 
     }
     # Read the user input
 
     read_options(){
       local choice
-      read -p "Enter choice [ 0 - 7 ] " choice
+      read -p "Enter choice [ 0 - 8 ] " choice
       case ${choice} in
         0) zero ;;
         1) one ;;
@@ -328,7 +354,8 @@ __dir="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
         4) four ;;
         5) five ;;
         6) six ;;
-        7) exit 0;; #This will exit out of the application
+        7) seven ;;
+        8) exit 0;; #This will exit out of the application
 		*) printf "%s\n${RED}Error...Option Not Valid, Please Choose Another${NC}" && sleep 2
 	esac
 

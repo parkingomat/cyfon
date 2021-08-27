@@ -75,3 +75,4 @@ time_date=$(date +'%a-%h-%d-%Y-%I_%M_%S-%Z')
 
 
     wget -qO- ${input} | tr \" \\n | grep -Eio "https?://[^;),'\\ ]+" | sort -u | nl | tee  "${input}_${time_date}".log
+    open .

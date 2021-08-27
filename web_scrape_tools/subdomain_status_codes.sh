@@ -1,9 +1,9 @@
 #! /bin/bash
 ################################################################
-# Description: The program will pull down all historical subdomains from
+# Description: The program will pull all of the subdomains and return the status code of each
 # Author: Jonathan Scott
-# Date Modified: 08/17/2021
-# Program Name: "Cyfon Tools" (Subdomain Rake)
+# Date Modified: 08/25/2021
+# Program Name: "Cyfon Tools" (Subdomain Stats)
 ################################################################
 
 # This sessions id will be generated everytime you run the program and it will be saved as a folder name
@@ -53,14 +53,14 @@ time_date=$(date +'%a-%h-%d-%Y-%I_%M_%S-%Z')
     double_space
 
     input_dir="${input}"_"${sessionid}"_"${time_date}"
-    LOG_METHOD_6="${DIR}"/LOGS/CYFON/METHODS/6/LOGS/
-    if [ ! -d "${LOG_METHOD_6}" ]; then
-        mkdir -p "${LOG_METHOD_6}";
-        cd  "${LOG_METHOD_6}" || return;
+    LOG_METHOD_7="${DIR}"/LOGS/CYFON/METHODS/7/LOGS/
+    if [ ! -d "${LOG_METHOD_7}" ]; then
+        mkdir -p "${LOG_METHOD_7}";
+        cd  "${LOG_METHOD_7}" || return;
         mkdir "${input_dir}" && cd "${input_dir}" || exit
 
-    elif [ -d "${LOG_METHOD_6}" ]; then
-        cd "${LOG_METHOD_6}" || return
+    elif [ -d "${LOG_METHOD_7}" ]; then
+        cd "${LOG_METHOD_7}" || return
         mkdir "${input_dir}" && cd "${input_dir}" || exit
 
     else
@@ -77,14 +77,16 @@ time_date=$(date +'%a-%h-%d-%Y-%I_%M_%S-%Z')
     subdomain_out(){
 
           while read LINE; do
-              curl https://subdomainfinder.c99.nl/scans/"${LINE}"/"${input}" | pup 'a[href] attr{href}' | grep -E '(.+\.)+.+\..+$' | sed '/subdomainfinder/d;/c99/d;/geoip/d' | tr -d '/' | sort | uniq &>"${input}"_subdomains.txt
+              curl https://subdomainfinder.c99.nl/scans/"${LINE}"/"${input}" | pup 'a[href] attr{href}' | grep -E '(.+\.)+.+\..+$' | sed '/subdomainfinder/d;/c99/d;/geoip/d' | tr -d '/' | sort | uniq | nl  &>"${input}"_subdomains.txt
             done </tmp/dates.txt
 
-            cat "${input}"_subdomains.txt |  cut -f2 >no_number_list.txt
+            cat "${input}"_subdomains.txt |  cut -f2 >subdomainfinder_list.txt
 
     }
 
     subdomain_out
+
+
 
     curl "https://crt.sh/?q=${input}" > /tmp/out.html
 
@@ -95,13 +97,11 @@ time_date=$(date +'%a-%h-%d-%Y-%I_%M_%S-%Z')
     # I am sorting the domains that were grepped and making sure there are no duplicates with the uniq command
     # I am again saving this cleaned up list to a temp file on your localhost
 
-    cat /tmp/out.html | tr '<BR>' '\n' | grep -E ".gov|.mil|.com|.us|.net|.biz|.io|.org" | sed '/href/d;/crt.sh/d;/Type:/d;/[A-Z]=/d;/ /d' | sort | uniq > subdomains_out.txt
+    cat /tmp/out.html | tr '<BR>' '\n' | grep -E ".gov|.mil|.com|.us|.net|.biz|.io|.org" | sed '/href/d;/crt.sh/d;/Type:/d;/[A-Z]=/d;/ /d' | sort | uniq > crt_list.txt
 
-    cat "${input}"_subdomains.txt subdomains_out.txt | sort | uniq > rake_final_list.txt
 
-    echo "------------------------------------------------------------------FULL LIST OUTPUT------------------------------------------------------------------"
-
-    cat rake_final_list.txt | nl
-    cat rake_final_list.txt > rake_final_list.csv
-    csvtotable -c "Subdomain Rake: ${input}" -d ";" rake_final_list.csv rake_final_list.html
-    open rake_final_list.html
+    cat subdomainfinder_list.txt  crt_list.txt > final_list.txt
+    xargs -n1 -P 50 curl -o /dev/null --silent --head --write-out '%{url_effective}; %{http_code}\n'  <  final_list.txt | tee subdomain_status.csv
+    cat subdomain_status.csv | sort -u > subdomain_status_sorted.csv
+    csvtotable  -c "Domain Status Codes: ${input}" -d ";" subdomain_status_sorted.csv subdomain_status.html
+    open subdomain_status.html
